@@ -14,11 +14,12 @@ res.sendFile(path.join(__dirname,"frontend","index.html"))
 
 })
 
-app.get("/About",(req,res) => {
-    res.sendFile(path.join(__dirname,"frontend","About.html"))
+app.get("/About/Chaninyut",(req,res) => {
+res.sendFile(path.join(__dirname,"frontend","About.html"))    
 })
+
 app.get("*",(req,res) => {
-    
+    res.sendFile(path.join(__dirname,"frontend","Error","Error.html"))
 })
 
 app.listen(1080 || process.env.PORT)

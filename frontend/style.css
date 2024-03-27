@@ -3366,6 +3366,44 @@ ul.nacc li p {
   background: rgb(255, 235, 168);
 }
 
+/* some theme settings */
+
+.Theme {
+  display: flex;
+  gap: 20px;
+}
+
+.Theme a {
+  color: #000;
+}
+
+.Theme-Sys h1 {
+  color: #000;
+  padding: 0.2rem 1.5rem;
+  border-radius: 4px;
+  background: rgb(255, 235, 168);
+  box-shadow: rgb(242, 223, 160) -12px -12px 31px, rgb(255, 247, 176) 12px 12px 31px;
+}
+
+/* some language settings */
+
+.lang-conn {
+  display: flex;
+  gap: 20px;
+}
+
+.language a {
+  color: #000;
+}
+
+.lang-sys h1 {
+  color: #000;
+  padding: 0.2rem 1.5rem;
+  border-radius: 4px;
+  background: rgb(255, 235, 168);
+  box-shadow: rgb(242, 223, 160) -12px -12px 31px, rgb(255, 247, 176) 12px 12px 31px;
+}
+
 /* More content end here */
 /* alert content */
 

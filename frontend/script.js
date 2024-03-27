@@ -116,4 +116,22 @@ function on() {
   
   function off() {
     document.getElementById("overlay").style.display = "none";
+<<<<<<< Updated upstream
   }
+=======
+  }
+
+// When the user clicks on div, open the popup
+// pop up section when click on view more section on navbar
+
+function ON2() {
+    document.getElementById("overlay-moreOptions").style.display = "block";
+  }
+  
+  function Off2() {
+    document.getElementById("overlay-moreOptions").style.display = "none";
+    // Make on click on off2()
+  }
+
+  
+>>>>>>> Stashed changes

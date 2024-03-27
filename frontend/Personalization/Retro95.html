@@ -1,0 +1,473 @@
+<!-- Cody from index.html dont chenge right now -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- css -->
+    <link rel="stylesheet" href="R-02.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peakk Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+
+    <link
+        href="https://api.fontshare.com/v2/css?f[]=outfit@1,400,500,600,700&f[]=jet-brains-mono@300,100,1,700,800,200,500,400,600&display=swap"
+        rel="stylesheet">
+
+    <!-- font-family: 'Outfit', sans-serif; -->
+    <!-- font-family: 'JetBrains Mono', sans-serif; -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- google icons -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+
+
+    <!-- Loader screen before header -->
+
+    <div class="loader loader--active">
+        <div class="loader__icon">
+            <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px" height="70px"
+                viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                <path opacity="0.2" fill="#000"
+                    d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z">
+                </path>
+                <path fill="#000"
+                    d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0C22.32,8.481,24.301,9.057,26.013,10.047z">
+                </path>
+                <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20"
+                    to="360 20 20" dur="0.5s" repeatCount="indefinite"></animateTransform>
+            </svg>
+        </div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+    </div>
+
+
+    <div class="cursor">
+        <div class="cursor__ball cursor__ball--big ">
+            <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
+
+        <div class="cursor__ball cursor__ball--small">
+            <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
+
+
+    <!-- loader javascript -->
+    <!-- animation background -->
+
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <script>
+        var $loader = document.querySelector('.loader')
+        window.onload = function () {
+            $loader.classList.remove('loader--active')
+        };
+    </script>
+
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <!-- image -->
+            <div class="text-navbar">
+                <!-- <div class="navImg"><img src="./Logo/Solid.jpg" alt=""></div> -->
+                <i class='bx bx-home'></i>
+                <span class="logo navLogo"><a href="#">PORTFOLIO</a></span>
+            </div>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">portfolio</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+                <ul class="nav-links">
+                    <li class="navhover" id="Selecter"><a href="/About"><i class='bx bx-search bx-flip-horizontal' ></i><span>Chaninyut</span></a></li>
+                    <li class="navhover" onclick="on()" ><a><i class='bx bx-user'></i><p>About me</p></a></li>
+                    <li class="navhover"><a href="#"><i class='bx bx-book-content'></i><p>Project</p></a></li>
+                    <li class="navhover"><a href="#"><i class='bx bx-donate-heart'></i><p>Donate</p></a></li>
+                    <li class="navhover" onclick="ON2()"><a><i class='bx bx-exit'></i><p id="myBtn">More Options</p></a></li>
+                </ul>
+            </div>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+                    <div class="search-field">
+                        <input type="text" placeholder="Type here to search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- pop up will click more options -->
+
+    <div id="overlay" onclick="off()">
+
+        <div class="alert">
+            <div class="alert-content">
+                <div class="alert-messeage">
+                    <h1>Do you want to know with?</h1>
+                    <p>If you want to know peakk portfolio developer select your developer do you like it on the bottom
+                        side will have a name all of a developer to make a peakk portfolio.</p>
+                </div>
+                <div class="alert-choice">
+                    <li><a href="#">Peakk</a></li>
+                    <li><a href="/About">Chaninyut</a></li>
+                    <li><a href="#">Wiwat</a></li>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="overlay-moreOptions">
+
+        <div class="naccs">
+            <div class="grid">
+                <div class="gc gc--1-of-3">
+                    <div class="menu">
+                        <div class="active"><span class="light"></span><span>Home</span></div>
+                        <div><span class="light"></span><span>Language</span></div>
+                        <div><span class="light"></span><span>Personalization</span></div>
+                    </div>
+                </div>
+                <div class="gc gc--2-of-3">
+                    <ul class="nacc">
+                        <li class="active">
+
+                            <div class="Welcome-More">
+                                <p class="Sett-introduc">This is<span>Peakk Portfolio<i class='bx bxs-cog'></i></span></p>
+                                <div class="expain">
+                                    <p>
+                                        Any settings its do you need on here you can surf some settings on here.
+                                    </p>
+                                </div>
+                                <div class="Exit-ToHome">
+                                    <button onclick="Off2()">Exit to lobby?</button>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="lang-sys">
+                                <h1>Select Your language</h1>
+
+                                <div class="language">
+                                    <div class="lang-conn">
+                                        <a href="#">English</a>
+                                        <a href="#">Thai</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <!-- dark mode pericnalization -->
+                            <div class="Theme-Sys">
+                                <h1>Select your theme</h1>
+
+                                <div class="color-sysche">
+                                    <div class="Theme">
+                                        <a href="#">Retro design</a>
+                                        <a href="#">Modern</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Acc
+        $(document).on("click", ".naccs .menu div", function () {
+            var numberIndex = $(this).index();
+
+            if (!$(this).is("active")) {
+                $(".naccs .menu div").removeClass("active");
+                $(".naccs ul li").removeClass("active");
+
+                $(this).addClass("active");
+                $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+                var listItemHeight = $(".naccs ul")
+                    .find("li:eq(" + numberIndex + ")")
+                    .innerHeight();
+                $(".naccs ul").height(listItemHeight + "px");
+            }
+        });
+
+    </script>
+
+
+    <div class="container">
+
+
+        <li class="l-section section section--is-active">
+            <div class="intro">
+                <div class="intro--banner">
+                    <h1>This is<br><strong>Peakk</strong><br>Portfolio</h1>
+                    <button class="cta">Hire Us
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                            style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                            <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                <path
+                                    d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                            </g>
+                        </svg>
+                        <span class="btn-background"></span>
+                    </button>
+                    <img src="../1711361629301.png" alt="">
+                </div>
+                <div class="intro--options">
+                    <a href="" target="_blank">
+                        <h3>About Me</h3>
+                        <p>Hello my name is peakk frontend web developer Html & Css but javascript i know a little bit
+                            sorry.</p>
+                    </a>
+                    <a href="" target="_blank">
+                        <h3>Project</h3>
+                        <p>I have project a lot but ain't done yet but i have twister web blog platform to make it
+                            successfully.</p>
+                    </a>
+                    <a href="" target="_blank">
+                        <h3>experience</h3>
+                        <p>My experience i start to make a website when i'am 11 year ago end of year 2022 to 2024 today
+                            me is 13 year ago.</p>
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <div class="reveal">
+
+            <li class="l-section section">
+                <div class="about">
+                    <div class="about--banner">
+                        <h2>Hello,<br>Let's<br>Know<span>To message me?</span><br></h2>
+                        <a class="about-buttons-on-responsive" href="">View More</a>
+                        </a>
+                        <i class='bx bx-mail-send'></i>
+                    </div>
+                    <div class="glitch-wrapper">
+                        <div class="glitch" data-text="This is my social media">This is my social media.</div>
+                    </div>
+
+                    <div class="icon2">
+                        <a href="#"><i class='bx bxl-facebook'></i> </a>
+                        <a href="#"><i class='bx bxl-instagram'></i> </a>
+                        <a href="#"><i class='bx bxl-youtube'></i> </a>
+                        <a href="#"><i class='bx bxl-tiktok'></i> </a>
+                    </div>
+
+                </div>
+            </li>
+
+        </div>
+
+        <!-- This is my comment -->
+
+        <div class="reveal">
+
+            <div class="comment">
+                <div class="comm-conn">
+                    <div class="comment-text">
+                        <h1>This, is my all<span>Developer</span>
+                            <h2>Of Peakk portfolio a developer to know it you see at the bottom they will have a button
+                                click it to begin.</h2>
+                            <li onclick="on()"><a>All my developer?</a></li>
+                        </h1>
+                    </div>
+                    <div class="background">
+                        <i class='bx bx-code-alt'></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="reveal">
+            <span class="Highlight">This is my all comment you can watch here.</span>
+        </div>
+
+        <!-- slider card -->
+
+
+        <div class="slider owl-carousel">
+            <div class="card">
+                <!-- <div class="img">
+                    <img src="https://plus.unsplash.com/premium_photo-1681400156787-e4afe6e6949a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZXJuJTIwYXJ0fGVufDB8fDB8fHww"
+                        alt="">
+                </div> -->
+                <div class="content">
+                    <div class="title">
+                        First one</div>
+                    <div class="sub-title">
+                        Graphic Designer</div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
+                        nihil minus sed unde voluptas cumque.</p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <!-- <div class="img">
+                    <img src="https://plus.unsplash.com/premium_photo-1681400156787-e4afe6e6949a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZXJuJTIwYXJ0fGVufDB8fDB8fHww"
+                        alt="">
+                </div> -->
+                <div class="content">
+                    <div class="title">
+                        Pricilla Preez</div>
+                    <div class="sub-title">
+                        Web Developer</div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
+                        nihil minus sed unde voluptas cumque.</p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <!-- <div class="img">
+                    <img src="https://plus.unsplash.com/premium_photo-1681400156787-e4afe6e6949a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZXJuJTIwYXJ0fGVufDB8fDB8fHww"
+                        alt="">
+                </div> -->
+                <div class="content">
+                    <div class="title">
+                        Eliana Maia</div>
+                    <div class="sub-title">
+                        App Developer</div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
+                        nihil minus sed unde voluptas cumque.</p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <!-- <div class="img">
+                    <img src="https://plus.unsplash.com/premium_photo-1681400156787-e4afe6e6949a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZXJuJTIwYXJ0fGVufDB8fDB8fHww"
+                        alt="">
+                </div> -->
+                <div class="content">
+                    <div class="title">
+                        Eliana Maia</div>
+                    <div class="sub-title">
+                        App Developer</div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
+                        nihil minus sed unde voluptas cumque.</p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <!-- <div class="img">
+                    <img src="https://plus.unsplash.com/premium_photo-1681400156787-e4afe6e6949a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZXJuJTIwYXJ0fGVufDB8fDB8fHww"
+                        alt="">
+                </div> -->
+                <div class="content">
+                    <div class="title">
+                        Eliana Maia</div>
+                    <div class="sub-title">
+                        App Developer</div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
+                        nihil minus sed unde voluptas cumque.</p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="icons">
+            <p class="company-name">
+                Peakk Portfolio &copy; 2024, ALL Rights Reserved
+            </p>
+            <div class="links">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="../script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+</html>

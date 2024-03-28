@@ -57,7 +57,7 @@ a {
 }
 
 body.dark ::selection {
-  background-color: #ffffff;
+  background-color: #bbd8d4;
   color: #000000;
 }
 
@@ -84,31 +84,6 @@ body.dark {
     background-size: cover;
 }
 
-body.dark:root {
-    --line: hsla(0, 0%, 100%, 0.813);
-    --accent: canvas;
-    --padding: 2rem;
-    --distance: 10vh;
-    /* color-scheme: light only; */
-}
-
-body.dark::before {
-  --size: 70px;
-  content: '';
-  height: 44vh;
-  width: 100vw;
-  position: absolute;
-  background: linear-gradient(90deg,
-      var(--line) 1px,
-      transparent 1px var(--size)) 50% 50% / var(--size) var(--size),
-    linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% / var(--size) var(--size);
-  mask: linear-gradient(-1deg, transparent 65%, rgb(0, 0, 0));
-  top: 0;
-  transform-style: flat;
-  pointer-events: none;
-  z-index: -1;
-}
-
 :root {
   --line: hsla(0, 0%, 5%, 0.409);
   --accent: canvas;
@@ -117,25 +92,17 @@ body.dark::before {
   /* color-scheme: light only; */
 }
 
-/* @media(prefers-color-scheme: dark) {
-	:root {
-		--line: hsla(0, 0%, 95%, 0.14);
-		color-scheme: dark only;
-	}
-} */
-
-
 body::before {
-  --size: 70px;
+  --size: 75px;
   content: '';
-  height: 44vh;
+  height: 46vh;
   width: 100vw;
   position: absolute;
   background: linear-gradient(90deg,
       var(--line) 1px,
       transparent 1px var(--size)) 50% 50% / var(--size) var(--size),
     linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% / var(--size) var(--size);
-  mask: linear-gradient(-1deg, transparent 65%, rgb(255, 255, 255));
+  mask: linear-gradient(5deg, transparent 65%, rgb(255, 255, 255));
   top: 0;
   transform-style: flat;
   pointer-events: none;
@@ -220,7 +187,7 @@ body.dark .follower {
   left: 0;
   width: 0;
   height: 40%;
-  background-color: #f5d672;
+  background-color: rgb(187, 216, 212);
   transition: width 1.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition-delay: 2s;
 }
@@ -312,7 +279,7 @@ html {
 :root {
   --side-nav: #f4f4f4;
   --text-color: #1b3135;
-  --nav-color:   background: rgba(238, 233, 227, 0.808);;
+  --nav-color:   rgba(238, 233, 227, 0.487);
 }
 
 nav {
@@ -326,6 +293,7 @@ nav {
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(20px);
   background-color: var(--nav-color);
+  border-bottom: #00000007 solid 2px;
 }
 
 nav .nav-bar {
@@ -440,7 +408,7 @@ nav .nav-bar .logo a {
 #Selecter {
   background: #bbd8d4;
   color: #1b3135;
-  border-radius: 6px;
+  border-radius: 2px;
   padding: 0.1rem;
   width: 150px;
   text-align: center;
@@ -448,7 +416,7 @@ nav .nav-bar .logo a {
 }
 
 body.dark #Selecter {
-  box-shadow: -5px 1px 12px #f2dfa0, 1px 1px 18px #fff7b0;
+  box-shadow: -0px 0px 8px #bbd8d4, 1px 1px 16px #acdad4;
 }
 
 body.dark #Selecter a {
@@ -643,7 +611,7 @@ body.dark .search-field i {
 
 @keyframes Swipe {
   from {
-    transform: translateX(-150px);
+    transform: translateX(-110px);
     filter: blur(5px);
     opacity: 0;
   }
@@ -679,11 +647,15 @@ body.dark .intro--banner {
   color: #000;
   padding-left: 1.3rem;
   padding-right: 1.3rem;
-  border-radius: 6px;
+  border-radius: 4px;
   font-family: Sato;
   letter-spacing: 0px;
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
+}
+
+body.dark .intro--banner strong {
+  text-shadow: none;
 }
 
 .intro--banner::before {
@@ -693,9 +665,13 @@ body.dark .intro--banner {
   left: -15px;
   right: 0;
   height: 2px;
-  border-radius: 20px;
+  border-radius: 2px;
   background: linear-gradient(180deg, #1b3135, #000);
   opacity: 50%;
+}
+
+body.dark .intro--banner::before {
+  background: linear-gradient(180deg, #bbd8d4, #fff);
 }
 
 .intro--banner::after {
@@ -705,8 +681,12 @@ body.dark .intro--banner {
   left: 0;
   width: 50px;
   height: 10px;
-  border-radius: 8px;
+  border-radius: 2.5px;
   background-color: #1b3135;
+}
+
+body.dark .intro--banner::after {
+  background-color: #bbd8d4;
 }
 
 .intro--banner h1 {
@@ -720,9 +700,9 @@ body.dark .intro--banner {
   font-family: Silkscreen;
   animation-name: example;
   animation-duration: 1s;
-  animation-delay: 0.3s;
-   text-shadow: -0px -0px 5px rgba(33, 54, 58, 0.539),
-             0px -0px 22px rgba(33, 54, 58, 0.482);
+  animation-delay: 2s;
+   text-shadow: 0px -0px 6px rgba(33, 54, 58, 0.487),
+             0px -2px 2px rgba(33, 54, 58, 0.323);
 }
 
 body.dark .intro--banner h1 {
@@ -733,7 +713,7 @@ body.dark .intro--banner h1 {
 @keyframes example {
   0% {
     opacity: 0;
-    transform: translateY(-40px);
+    transform: translateY(-80px);
   }
 
   100% {
@@ -744,7 +724,7 @@ body.dark .intro--banner h1 {
 .intro--banner button {
   position: relative;
   padding: 0.7rem 2rem;
-  border-radius: 6px;
+  border-radius: 2px;
   font-weight: 700;
   text-transform: uppercase;
   background-color: transparent;
@@ -774,7 +754,7 @@ body.dark .intro--banner button {
   left: 23px;
   right: 0;
   height: 100%;
-  background-color: #F5D672;
+  background-color: #9bcbc5;
   border-radius: 4px;
   z-index: -1;
   -webkit-transition: left .2s ease-in-out;

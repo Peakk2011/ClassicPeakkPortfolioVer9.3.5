@@ -893,7 +893,7 @@ body.dark .about--banner {
   left: 200px;
   -webkit-transform: rotate(-25deg);
   transform: rotate(-25deg);
-  border: 5px solid #F5D672;
+  border: 5px solid #bbd8d4;
   border-right-color: transparent;
   border-bottom-color: transparent
 }
@@ -907,7 +907,7 @@ body.dark .about--banner {
   transform: rotate(45deg);
   width: 10px;
   height: 10px;
-  background-color: #F5D672;
+  background-color: #bbd8d4;
 }
 
 .about--banner h2 {
@@ -956,7 +956,7 @@ body.dark .about--banner h2 {
   left: 268px;
   width: 30px;
   height: 30px;
-  background-color: #F5D672;
+  background-color: #9bcbc5;
   border-radius: 50%
 }
 
@@ -967,7 +967,7 @@ body.dark .about--banner h2 {
   left: 255px;
   width: 10px;
   height: 10px;
-  background-color: #F5D672;
+  background-color: #bbd8d4;
 }
 
 .about--banner i {
@@ -984,9 +984,7 @@ body.dark .about--banner i {
 }
 
 .about-buttons-on-responsive {
-  background: linear-gradient(225deg, #e6cf85, #fff69e);
-  box-shadow:  -12px 12px 31px #d6c17c,
-               12px -12px 31px #ffffac;
+  background: linear-gradient(225deg, #bbd8d4, #bbd8d4bb);
   color: #000;
   margin-top: 4rem;
   padding: 0.4rem 0.6rem;

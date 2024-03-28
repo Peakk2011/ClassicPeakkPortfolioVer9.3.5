@@ -12,24 +12,130 @@
     <style>
         body {
             background-color: #000;
+            overflow: hidden;
+        }
+        
+        .content {
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%,-50%);
-            overflow: hidden;
+            transform: translate(-50%, -50%);
+        }
+
+        .loader {
+            position: absolute;
+            scale: 80%;
+            top: 85%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 50px;
+            height: 50px;
+            margin: auto;
+        }
+
+        .loader .circle {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            opacity: 0;
+            transform: rotate(225deg);
+            animation-iteration-count: infinite;
+            animation-name: orbit;
+            animation-duration: 5.5s;
+        }
+
+        .loader .circle:after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 0 0 9px rgba(255, 255, 255, .7);
+        }
+
+        .loader .circle:nth-child(2) {
+            animation-delay: 240ms;
+        }
+
+        .loader .circle:nth-child(3) {
+            animation-delay: 480ms;
+        }
+
+        .loader .circle:nth-child(4) {
+            animation-delay: 720ms;
+        }
+
+        .loader .circle:nth-child(5) {
+            animation-delay: 960ms;
+        }
+
+        .loader .bg {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            margin-left: -16px;
+            margin-top: -16px;
+            border-radius: 13px;
+            background-color: rgba(0, 0, 0, 0.69);
+            animation: bgg 16087ms ease-in alternate infinite;
+        }
+
+        @keyframes orbit {
+            0% {
+                transform: rotate(225deg);
+                opacity: 1;
+                animation-timing-function: ease-out;
+            }
+
+            7% {
+                transform: rotate(345deg);
+                animation-timing-function: linear;
+            }
+
+            30% {
+                transform: rotate(455deg);
+                animation-timing-function: ease-in-out;
+            }
+
+            39% {
+                transform: rotate(690deg);
+                animation-timing-function: linear;
+            }
+
+            70% {
+                transform: rotate(815deg);
+                opacity: 1;
+                animation-timing-function: ease-out;
+            }
+
+            75% {
+                transform: rotate(945deg);
+                animation-timing-function: ease-out;
+            }
+
+            76% {
+                transform: rotate(945deg);
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotate(945deg);
+                opacity: 0;
+            }
         }
 
         #tiresult {
-            animation: mymove 2s infinite;
+            animation: mymove 3.5s;
         }
 
         @keyframes mymove {
             from {
-                height: 0px;
+                opacity: 0;
             }
 
             to {
-                height: 100%;
+                opacity: 1;
             }
         }
 
@@ -51,6 +157,8 @@
             }
         }
     </style>
+
+    <div class="content">
 
     <pre id="tiresult"
         style="font-size: 9px; background-color: #000000; font-weight: bold; padding: 4px 5px; --fs: 9px;"><b style="color:#000000">10101111100001110111101000001011110011100001101000110010110111000010000110111010011010101110001010000111100110011101111111010</b>
@@ -117,6 +225,17 @@
         <b style="color:#F2FFEC">0</b><b style="color:#E2F7E1">1</b><b style="color:#D0E2C9">1</b><b style="color:#C6D5BB">1</b><b style="color:#C8D5BB">1</b><b style="color:#C6D2B9">1</b><b style="color:#C4CAB3">0</b><b style="color:#C6CAB4">1</b><b style="color:#C6C8B3">1</b><b style="color:#C4C6B1">1</b><b style="color:#C3C4AF">1</b><b style="color:#C1C2AD">1</b><b style="color:#C0BFAA">1</b><b style="color:#C0BEA9">0</b><b style="color:#C2BDAB">1</b><b style="color:#C3BEAB">0</b><b style="color:#C3BDAB">1</b><b style="color:#C3BCAA">1</b><b style="color:#C2BBA9">1</b><b style="color:#C1BAA8">0</b><b style="color:#C2B9A8">1</b><b style="color:#C2B8A7">0</b><b style="color:#C2B9A8">1</b><b style="color:#C4B9A8">1</b><b style="color:#C4B8A8">0</b><b style="color:#C4B8A7">0</b><b style="color:#C3B7A6">0</b><b style="color:#C3B6A6">1</b><b style="color:#C3B5A5">0</b><b style="color:#C3B3A4">0</b><b style="color:#C1B2A3">1</b><b style="color:#BEB1A1">1</b><b style="color:#BDB0A0">1</b><b style="color:#BFB0A1">0</b><b style="color:#BEB0A1">0</b><b style="color:#C0B1A2">1</b><b style="color:#C3B3A4">1</b><b style="color:#C4B3A5">0</b><b style="color:#C4B3A4">10</b><b style="color:#C2B2A2">1</b><b style="color:#BFAFA0">0</b><b style="color:#BEAD9F">1</b><b style="color:#BCAB9E">1</b><b style="color:#BBAA9C">1</b><b style="color:#BAA798">0</b><b style="color:#B7A596">0</b><b style="color:#B2A192">1</b><b style="color:#AC9C8D">0</b><b style="color:#B1A293">1</b><b style="color:#B5A597">1</b><b style="color:#B7A899">0</b><b style="color:#BAAA9B">1</b><b style="color:#BCAD9E">0</b><b style="color:#BEAFA0">0</b><b style="color:#C1B1A2">1</b><b style="color:#C3B3A4">1</b><b style="color:#C5B4A6">1</b><b style="color:#C8B6AA">0</b><b style="color:#C9B7AB">1</b><b style="color:#CBB9AC">1</b><b style="color:#CCBAAE">0</b><b style="color:#CDBBAF">1</b><b style="color:#CEBCB0">0</b><b style="color:#D0BDB1">011</b><b style="color:#CFBDB2">0</b><b style="color:#CEBEB3">10</b><b style="color:#CDBEB3">10</b><b style="color:#CCBCB2">1</b><b style="color:#D3C9C0">0</b><b style="color:#DFDFD5">1</b><b style="color:#E0E0D6">0</b><b style="color:#E1E2D7">1</b><b style="color:#E1E1D7">0</b><b style="color:#E0E0D5">1</b><b style="color:#E1E0D6">011</b><b style="color:#E0E0D6">1</b><b style="color:#E1E0D6">1</b><b style="color:#DFDFD6">1</b><b style="color:#E1DDCF">1</b><b style="color:#F4DCAD">0</b><b style="color:#E6DFC9">1</b><b style="color:#D9D5CE">1</b><b style="color:#D3CCC3">1</b><b style="color:#D1CAC1">1</b><b style="color:#D0C9C0">11</b><b style="color:#CDC6BE">1</b><b style="color:#CCC5BB">0</b><b style="color:#CDC4B9">0</b><b style="color:#CEC3B8">1</b><b style="color:#CFC3B8">1</b><b style="color:#CEC3B7">010</b><b style="color:#CEC2B7">0</b><b style="color:#CFC2B7">1</b><b style="color:#CEC1B6">0</b><b style="color:#CEC0B5">1</b><b style="color:#CEC2B7">1</b><b style="color:#D0C4B9">1</b><b style="color:#D2C5BA">0</b><b style="color:#D3C6BB">1</b><b style="color:#D1C4BA">0</b><b style="color:#D0C4B9">0</b><b style="color:#D1C3B9">1</b><b style="color:#D1C4B9">1</b><b style="color:#CFC2B7">0</b><b style="color:#CEC1B6">1</b><b style="color:#CEC2B7">1</b><b style="color:#CEC4B8">0</b><b style="color:#CFC4B9">1</b><b style="color:#CFC5B9">1</b><b style="color:#D1C7BB">0</b><b style="color:#D1C9BD">1</b><b style="color:#D0C6BA">1</b><b style="color:#C6BEAD">1</b><b style="color:#CAD9C3">1</b><b style="color:#D0E5CE">0</b>
         <b style="color:#CEBDB2">0</b><b style="color:#C1BBAA">0</b><b style="color:#C7D4BC">0</b><b style="color:#C7D4BB">0</b><b style="color:#C6D4BB">1</b><b style="color:#C8D4BC">1</b><b style="color:#C9D6BD">1</b><b style="color:#CAD7BE">0</b><b style="color:#CAD7BF">1</b><b style="color:#CAD7BE">1</b><b style="color:#C8D6BE">1</b><b style="color:#C8D6BD">0</b><b style="color:#C7D6BD">1</b><b style="color:#C6D6BC">0</b><b style="color:#C8D6BE">0</b><b style="color:#C9D8BF">1</b><b style="color:#C9D7BF">0</b><b style="color:#CAD7BF">1</b><b style="color:#C9D7BF">0</b><b style="color:#CAD8BF">1</b><b style="color:#CBD9C0">0</b><b style="color:#CBDAC1">0</b><b style="color:#CBD9C1">0</b><b style="color:#CBD9C0">1110</b><b style="color:#CCD9C0">0</b><b style="color:#CAD8C0">0</b><b style="color:#CAD8BF">0</b><b style="color:#C9D9BF">1</b><b style="color:#C8D9BF">0</b><b style="color:#C9D8BF">1</b><b style="color:#C7D9BF">1</b><b style="color:#C8D9BF">1</b><b style="color:#CADAC0">0</b><b style="color:#CBDBC1">0</b><b style="color:#CCDBC1">0</b><b style="color:#CDDAC1">0</b><b style="color:#CCDAC1">1</b><b style="color:#CBDAC1">1</b><b style="color:#C8D9BF">1</b><b style="color:#C8D8BE">01</b><b style="color:#C7D7BD">0</b><b style="color:#C6D6BD">0</b><b style="color:#C5D5BB">0</b><b style="color:#C3D3B9">0</b><b style="color:#C2D3B9">0</b><b style="color:#C3D5BA">1</b><b style="color:#C5D6BB">1</b><b style="color:#C6D8BD">1</b><b style="color:#C6D8BE">1</b><b style="color:#C8DABF">00</b><b style="color:#CBDBC1">1</b><b style="color:#CCDBC2">11</b><b style="color:#CCDCC5">0</b><b style="color:#CCDDC5">0</b><b style="color:#CDDDC6">1</b><b style="color:#CDDEC6">1</b><b style="color:#CEDEC6">0</b><b style="color:#CDDEC6">1</b><b style="color:#CEDFC7">010100</b><b style="color:#CDDFC7">0</b><b style="color:#CEDFC7">10</b><b style="color:#CCDEC6">0</b><b style="color:#CADCC3">0</b><b style="color:#CADDC4">01</b><b style="color:#CBDEC5">0</b><b style="color:#CBDDC4">0</b><b style="color:#CADDC4">0</b><b style="color:#CADCC4">0</b><b style="color:#CADCC3">00</b><b style="color:#C9DCC3">0</b><b style="color:#C9DBC3">1</b><b style="color:#E3CF8D">0</b><b style="color:#E6CD86">1</b><b style="color:#CBD9C1">0</b><b style="color:#CBDBC5">0</b><b style="color:#CBDCC6">1</b><b style="color:#CBDBC5">0</b><b style="color:#C9DBC5">0</b><b style="color:#C9DCC5">1</b><b style="color:#C6D9C3">0</b><b style="color:#C5D8C1">1</b><b style="color:#C7D7C0">1</b><b style="color:#C8D8C0">0</b><b style="color:#CAD9C0">0</b><b style="color:#CAD9BF">0</b><b style="color:#CAD9C0">0</b><b style="color:#CAD8C0">1</b><b style="color:#CAD8BF">000</b><b style="color:#CAD7BF">0</b><b style="color:#C9D7C0">0</b><b style="color:#CAD8C0">1</b><b style="color:#CBD8BF">0</b><b style="color:#CBDAC1">0</b><b style="color:#CBD9C0">1</b><b style="color:#CAD8C1">0</b><b style="color:#CAD8C0">1</b><b style="color:#CAD9BF">01</b><b style="color:#CAD8C0">0</b><b style="color:#CAD8BF">1</b><b style="color:#C8D8BE">0</b><b style="color:#CAD9C1">00</b><b style="color:#CADAC0">11</b><b style="color:#C9DABF">1</b><b style="color:#CBDCC2">1</b><b style="color:#CADAC3">1</b><b style="color:#D0E5CE">1</b>
         </pre>
+
+    </div>
+
+    <div class='loader'>
+        <div class="bg"></div>
+        <div class='circle'></div>
+        <div class='circle'></div>
+        <div class='circle'></div>
+        <div class='circle'></div>
+        <div class='circle'></div>
+    </div>
 
 </body>
 

@@ -3385,6 +3385,24 @@ ul.nacc li p {
   box-shadow: rgb(242, 223, 160) -12px -12px 31px, rgb(255, 247, 176) 12px 12px 31px;
 }
 
+.Theme-Selecter a img {
+  width: 250px;
+  border-radius: 5px;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Theme-Selecter a {
+  font-size: 24px;
+  margin: 1.2rem 0px;
+  display: block;
+  text-decoration: underline;
+  font-family: Silkscreen;
+  -webkit-text-stroke-width: 1px;
+  letter-spacing: -2.5px;
+}
+
 /* some language settings */
 
 .lang-conn {

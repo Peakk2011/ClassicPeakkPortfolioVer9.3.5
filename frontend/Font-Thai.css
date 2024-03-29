@@ -1,8 +1,12 @@
+/* Reset To Defauit */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Arabica */
 
 @font-face {
     font-family: Arabica;

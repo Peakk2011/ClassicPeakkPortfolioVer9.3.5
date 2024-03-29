@@ -3401,6 +3401,7 @@ ul.nacc li p {
   font-family: Silkscreen;
   -webkit-text-stroke-width: 1px;
   letter-spacing: -2.5px;
+  color: var(--text-color);
 }
 
 /* some language settings */
@@ -3589,7 +3590,7 @@ body.dark .alert-choice {
     backdrop-filter: blur(0px);
   }
   body.dark .about--banner {
-    background: rgb(0, 0, 0);
+    background:  #030303;
     backdrop-filter: blur(0px);
   }
   .about--banner {
@@ -3597,7 +3598,7 @@ body.dark .alert-choice {
     backdrop-filter: blur(0px);
   }
   body.dark .intro--banner {
-    background: rgb(0, 0, 0);
+    background:  #030303;
     backdrop-filter: blur(0px);
   }
   body.dark .circles li {

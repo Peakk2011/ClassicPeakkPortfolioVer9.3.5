@@ -3244,6 +3244,7 @@ ul.nacc li p {
 
 .Theme-Selecter a {
   font-size: 24px;
+  color: var(--text-color);
   margin: 1.2rem 0px;
   display: block;
   text-decoration: underline;
@@ -3431,7 +3432,7 @@ body {
     backdrop-filter: blur(0px);
   }
   body.dark .about--banner {
-    background: rgb(0, 0, 0);
+    background:  #030303;
     backdrop-filter: blur(0px);
   }
   .about--banner {
@@ -3439,7 +3440,7 @@ body {
     backdrop-filter: blur(0px);
   }
   body.dark .intro--banner {
-    background: rgb(0, 0, 0);
+    background:  #030303;
     backdrop-filter: blur(0px);
   }
   body.dark .circles li {

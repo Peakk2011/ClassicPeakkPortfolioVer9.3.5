@@ -1988,8 +1988,7 @@ body.dark .icon2 a {
   font-family: Silkscreen;
   width: 300px;
   letter-spacing: -6px;
-  text-shadow: -0px -0px 6px rgba(10, 6, 6, 0.66),
-  0px -0px 24px rgba(89, 89, 89, 0.62);
+  text-shadow: 0px 0px 6px rgba(33, 54, 58, 0.487), 0px -2px 2px rgba(33, 54, 58, 0.323);
 }
 
 body.dark .comment-text h1 {
@@ -3410,4 +3409,46 @@ ul.nacc li p {
 
 body {
     background-color: #EEE9E3;
+}
+
+@media (prefers-reduced-transparency) {
+  body.dark {
+    --body-color: #030303;
+    --nav-color: rgb(5, 5, 5);
+    --side-nav: #0d0d0d;
+    --text-color: #ffffff;
+    --search-bar: #242526;
+  }
+  nav {
+    backdrop-filter: blur(0px);
+  }
+  :root {
+    --side-nav: #f4f4f4;
+    --nav-color: #EEE9E3;
+  }
+  .intro--banner {
+    background: #EEE9E3;
+    backdrop-filter: blur(0px);
+  }
+  body.dark .about--banner {
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(0px);
+  }
+  .about--banner {
+    background: #EEE9E3;
+    backdrop-filter: blur(0px);
+  }
+  body.dark .intro--banner {
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(0px);
+  }
+  body.dark .circles li {
+    background: rgba(255, 255, 255, 0);
+}
+  .circles li {
+    background: #EEE9E3;
+  }
+  .intro--banner button {
+    box-shadow: none;
+  }
 }

@@ -3567,4 +3567,46 @@ body.dark .alert-choice {
   .alert-choice a {
     padding: 0.45rem 1rem;
   }
+}  
+
+@media (prefers-reduced-transparency) {
+  body.dark {
+    --body-color: #030303;
+    --nav-color: rgb(5, 5, 5);
+    --side-nav: #0d0d0d;
+    --text-color: #ffffff;
+    --search-bar: #242526;
+  }
+  nav {
+    backdrop-filter: blur(0px);
+  }
+  :root {
+    --side-nav: #f4f4f4;
+    --nav-color: rgb(255, 255, 255);
+  }
+  .intro--banner {
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(0px);
+  }
+  body.dark .about--banner {
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(0px);
+  }
+  .about--banner {
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(0px);
+  }
+  body.dark .intro--banner {
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(0px);
+  }
+  body.dark .circles li {
+    background: rgba(255, 255, 255, 0);
+}
+  .circles li {
+    background: rgb(255, 255, 255);
+  }
+  .intro--banner button {
+    box-shadow: none;
+  }
 }

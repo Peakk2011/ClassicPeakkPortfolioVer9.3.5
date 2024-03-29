@@ -3433,6 +3433,7 @@ body {
   }
   body.dark .about--banner {
     background:  #030303;
+    backdrop-filter: blur(0px);
   }
   .about--banner {
     background: #EEE9E3;
@@ -3440,6 +3441,7 @@ body {
   }
   body.dark .intro--banner {
     background:  #030303;
+    backdrop-filter: blur(0px);
   }
   body.dark .circles li {
     background: rgba(255, 255, 255, 0);

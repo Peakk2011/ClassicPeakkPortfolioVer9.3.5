@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav .nav-bar .logo a {
+    letter-spacing: 0px;
+    font-family: Arabica;
+}

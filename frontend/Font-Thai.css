@@ -10,54 +10,54 @@
 
 @font-face {
     font-family: Arabica;
-    src: url(FontThai/Arabica/Arabica.otf);
+    src: url(Arabica/Arabica.otf);
 }
 
 @font-face {
     font-family: Arabica-italic;
-    src: url(FontThai/Arabica/Arabica-italic.otf);
+    src: url(Arabica/Arabica-italic.otf);
 }
 
 /* Fc-icon */
 
 @font-face {
     font-family: FC-icons-Bold;
-    src: url(FontThai/FC-Iconic/FC\ Iconic\ Bold.otf);
+    src: url(FC-Iconic/FC\ Iconic\ Bold.otf);
 }
 
 @font-face {
     font-family: FC-icons;
-    src: url(FontThai/FC-Iconic/FC\ Iconic\ Regular.otf);
+    src: url(FC-Iconic/FC\ Iconic\ Regular.otf);
 }
 
 /* Misans Thai */
 
 @font-face {
     font-family: MiSans-th-Bold;
-    src: url(FontThai/MiSans_Thai/MiSansThai-Bold.otf);
+    src: url(MiSans_Thai/MiSansThai-Bold.otf);
 }
 
 @font-face {
     font-family: MiSans-th-DemoBold;
-    src: url(FontThai/MiSans_Thai/MiSansThai-Demibold.otf);
+    src: url(MiSans_Thai/MiSansThai-Demibold.otf);
 }
 
 @font-face {
     font-family: MiSans-th-Extralight;
-    src: url(FontThai/MiSans_Thai/MiSansThai-ExtraLight.otf);
+    src: url(MiSans_Thai/MiSansThai-ExtraLight.otf);
 } 
 
 @font-face {
     font-family: MiSans-th-light;
-    src: url(FontThai/MiSans_Thai/MiSansThai-Light.otf);
+    src: url(MiSans_Thai/MiSansThai-Light.otf);
 }
 
 @font-face {
     font-family: MiSans-th-Normal;
-    src: url(FontThai/MiSans_Thai/MiSansThai-Normal.otf);
+    src: url(MiSans_Thai/MiSansThai-Normal.otf);
 }
 
 @font-face {
     font-family: MiSans-th-Med;
-    src: url(FontThai/MiSans_Thai/MiSansThai-Medium.otf);
+    src: url(MiSans_Thai/MiSansThai-Medium.otf);
 }

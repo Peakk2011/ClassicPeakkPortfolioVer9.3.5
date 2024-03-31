@@ -48,7 +48,7 @@ a {
   border: 0;
   -webkit-tap-highlight-color: transparent;
   scroll-snap-type: y mandatory;
-  cursor: url(Normal.cur) auto;   /* max size = 32 X 32 pixels */
+  cursor: url(Normal.cur) , auto;   /* max size = 32 X 32 pixels */
 }
 
 ::selection {

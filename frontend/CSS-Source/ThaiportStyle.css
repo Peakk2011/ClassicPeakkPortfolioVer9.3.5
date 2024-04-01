@@ -4,7 +4,98 @@
     box-sizing: border-box;
 }
 
+a {
+    cursor: pointer;
+}
+
 nav .nav-bar .logo a {
     letter-spacing: 0px;
     font-family: Arabica;
+    font-size: 28px;
+    display: block;
+    transform: translateY(4px);
+}
+
+.text-navbar i {
+    font-size: 22px;
+}
+
+#Selecter span {
+    font-family: Arabica;
+    font-size: 21px;
+}
+
+.nav-bar .nav-links {
+    font-family: FC-icons;   
+}
+
+.nav-bar .nav-links a {
+    font-size: 24px;
+}
+
+.intro--banner h1 {
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-family: MiSans-th-DemoBold;
+}
+
+.intro--banner strong {
+    font-family: FC-icons;   
+    font-size: 82px;
+}
+
+.intro--options p {
+    font-family: Arabica;
+    line-height: 1;
+    font-size: 20px;
+}
+
+.intro--options h3 {
+    font-family: FC-icons;   
+    font-size: 26px;
+}
+
+.about--banner h2 {
+    letter-spacing: 0px;   
+    font-family: FC-icons;
+}
+
+.about--banner span {
+    letter-spacing: 0px;
+    font-family: MiSans-th-DemoBold;
+    font-size: 39px;
+    height: 3.5rem;
+    padding-top: 0.3rem;
+    -webkit-text-stroke-width: 0px;
+    width: 330px;
+    font-weight: 500;
+}
+
+.glitch {
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    font-family: MiSans-th-DemoBold;
+}
+
+.comment-text h1 {
+    letter-spacing: 0px;
+    font-family: MiSans-th-DemoBold;
+}
+
+.comment-text span {
+    font-family: FC-icons;
+    width: 375px;
+}
+
+.comment-text h2 {
+    font-family: Arabica;
+    text-shadow: 0px 0px 4px rgba(10, 6, 6, 0.425), 0px 0px 18px rgba(89, 89, 89, 0.62);
+    width: 330px;
+    line-height: 1.25;
+}
+
+.intro--banner button {
+    font-family: Arabica;
+    font-size: 22px;
+    padding: 0.5rem 2rem;
 }

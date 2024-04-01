@@ -345,9 +345,9 @@ nav .nav-bar {
 
 @keyframes navbar-anim {
   from {
-    transform: translateY(-950px);
+    transform: translateY(-110px);
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(20px);
   }
 
   to {
@@ -646,7 +646,7 @@ body.dark .search-field i {
 @keyframes Swipe {
   from {
     transform: translateX(-150px);
-    filter: blur(5px);
+    filter: blur(20px);
     opacity: 0;
   }
 
@@ -750,7 +750,7 @@ body.dark .intro--banner {
   font-family: Silkscreen;
   animation-name: example;
   animation-duration: 1s;
-  animation-delay: 0.3s;
+  animation-delay: 2s;
    text-shadow: -0px -0px 5px rgba(10, 6, 6, 0.66),
              0px -0px 22px rgba(89, 89, 89, 0.62);
              animation: flicker-text 0.3s infinite alternate;  
@@ -785,6 +785,7 @@ body.dark .intro--banner h1 {
 
   100% {
     transform: translateY(0px);
+    opacity: 1;
   }
 }
 

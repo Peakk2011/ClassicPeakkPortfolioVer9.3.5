@@ -279,7 +279,7 @@ html {
 :root {
   --side-nav: #f4f4f4;
   --text-color: #1b3135;
-  --nav-color:   rgba(238, 233, 227, 0.487);
+  --nav-color:   rgba(238, 233, 227, 0.809);
 }
 
 nav {
@@ -293,7 +293,6 @@ nav {
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(20px);
   background-color: var(--nav-color);
-  border-bottom: #00000007 solid 2px;
 }
 
 nav .nav-bar {
@@ -3263,6 +3262,16 @@ ul.nacc li p {
 
 .language a {
   color: #000;
+  font-size: 32px;
+    font-family: Silkscreen;
+  margin-top: 1rem;
+  letter-spacing: -5px;
+  -webkit-text-stroke-width: 1px;
+  text-align: center;
+}
+
+body.dark .language a  {
+  color: #fff;
 }
 
 .lang-sys h1 {

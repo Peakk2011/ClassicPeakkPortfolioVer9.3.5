@@ -279,7 +279,7 @@ html {
 :root {
   --side-nav: #f4f4f4;
   --text-color: #1b3135;
-  --nav-color:   rgba(238, 233, 227, 0.487);
+  --nav-color:   rgba(238, 233, 227, 0.734);
 }
 
 nav {
@@ -293,7 +293,6 @@ nav {
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(20px);
   background-color: var(--nav-color);
-  border-bottom: #00000007 solid 2px;
 }
 
 nav .nav-bar {

@@ -99,3 +99,81 @@ nav .nav-bar .logo a {
     font-size: 22px;
     padding: 0.5rem 2rem;
 }
+
+.comment-text li a {
+    padding: 0.6rem 1rem;
+    font-weight: 200;
+    font-size: 20px;
+    font-family: MiSans-th-Normal;
+}
+
+.alert-messeage h1 {
+    font-size: 28px;
+    font-family: MiSans-th-DemoBold;
+}
+
+.alert-messeage p {
+    font-family: Arabica;
+    font-size: 24px;
+    width: 80%;
+}
+
+.alert-choice a {
+    font-family: FC-icons;
+    font-size: 22px;
+    -webkit-text-stroke-width: 1px;
+    letter-spacing: 0.5px;
+}
+
+.naccs .menu div.active {
+    font-family: MiSans-th-Bold;
+    -webkit-text-stroke-width: 0px;
+    letter-spacing: 0px;
+}
+
+.naccs .menu div {
+    font-family: MiSans-th-DemoBold;
+    -webkit-text-stroke-width: 0px;
+    letter-spacing: 0px;
+}
+
+.Sett-introduc {
+    font-family: FC-icons;
+    letter-spacing: 0px;
+}
+
+.Welcome-More span {
+    font-family: MiSans-th-DemoBold;
+    -webkit-text-stroke-width: 0px;
+    letter-spacing: 0px;
+    width: 270px;
+}
+
+.expain p {
+    font-family: MiSans-th-DemoBold;
+    width: 335px;
+}
+
+.Exit-ToHome button {
+    font-family: MiSans-th-Med;
+}
+
+.Theme-Sys h1 {
+    font-family: MiSans-th-DemoBold;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    -webkit-text-stroke-width: 0px;
+    letter-spacing: 0px;
+}
+
+.lang-sys h1 {
+    font-family: MiSans-th-DemoBold;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    -webkit-text-stroke-width: 0px;
+    letter-spacing: 0px;
+}
+
+.company-name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

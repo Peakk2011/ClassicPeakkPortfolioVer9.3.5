@@ -15,7 +15,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
     <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
@@ -36,11 +36,17 @@
 
     <!-- google icons -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- LINKS THAI STYLE ON LANGUAGE -->
+    <link rel="stylesheet" href="../../../Font-Thai.css">
+    <link rel="stylesheet" href="../../../CSS-Source/ThaiportStyle.css">
 
 </head>
 
 <body>
+
 
     <!-- Loader screen before header -->
 
@@ -114,19 +120,19 @@
             <div class="text-navbar">
                 <!-- <div class="navImg"><img src="./Logo/Solid.jpg" alt=""></div> -->
                 <i class='bx bx-home'></i>
-                <span class="logo navLogo"><a href="#">PORTFOLIO</a></span>
+                <span class="logo navLogo"><a href="#">ผลงานของพีค</a></span>
             </div>
             <div class="menu">
                 <div class="logo-toggle">
-                    <span class="logo"><a href="#">portfolio</a></span>
+                    <span class="logo"><a href="#">ผลงานของพีค</a></span>
                     <i class='bx bx-x siderbarClose'></i>
                 </div>
                 <ul class="nav-links">
-                    <li class="navhover" id="Selecter"><a href="/About"><i class='bx bx-search bx-flip-horizontal' ></i><span>Chaninyut</span></a></li>
-                    <li class="navhover" onclick="on()" ><a><i class='bx bx-user'></i><p>About me</p></a></li>
-                    <li class="navhover"><a href="#"><i class='bx bx-book-content'></i><p>Project</p></a></li>
-                    <li class="navhover"><a href="#"><i class='bx bx-donate-heart'></i><p>Donate</p></a></li>
-                    <li class="navhover" onclick="ON2()"><a><i class='bx bx-exit'></i><p id="myBtn">More Options</p></a></li>
+                    <li class="navhover" id="Selecter"><a href="./About.html"><i class='bx bx-search bx-flip-horizontal' ></i><span>ชนินทร์ยุทธ</span></a></li>
+                    <li class="navhover" onclick="on()" ><a><i class='bx bx-user'></i><p>เกียวกับผม</p></a></li>
+                    <li class="navhover"><a href="#"><i class='bx bx-book-content'></i><p>โปรเจค</p></a></li>
+                    <li class="navhover"><a href="#"><i class='bx bx-donate-heart'></i><p>สนับสนุน</p></a></li>
+                    <li class="navhover" onclick="ON2()"><a><i class='bx bx-exit'></i><p id="myBtn">ตัวเลือกเพิ่มเติม</p></a></li>
                 </ul>
             </div>
             <div class="darkLight-searchBox">
@@ -155,14 +161,13 @@
         <div class="alert">
             <div class="alert-content">
                 <div class="alert-messeage">
-                    <h1>Do you want to know with?</h1>
-                    <p>If you want to know peakk portfolio developer select your developer do you like it on the bottom
-                        side will have a name all of a developer to make a peakk portfolio.</p>
+                    <h1>คุณอยากรู้ผลงานของใครครับ</h1>
+                    <p>นักพัฒนาเว็บนี้มี 3 คนครับผมก็ไม่รู้ว่าจะอยากดูผลงานใครครับเลือกดูชื่อที่คุณสนใจและกดครับ</p>
                 </div>
                 <div class="alert-choice">
-                    <li><a href="#">Peakk</a></li>
-                    <li><a href="/About">Chaninyut</a></li>
-                    <li><a href="#">Wiwat</a></li>
+                    <li><a href="#">พึค</a></li>
+                    <li><a href="/About">ชนินทร์ยุทธ</a></li>
+                    <li><a href="#">วิวัฒน์</a></li>
                 </div>
             </div>
         </div>
@@ -175,9 +180,9 @@
             <div class="grid">
                 <div class="gc gc--1-of-3">
                     <div class="menu">
-                        <div class="active"><span class="light"></span><span>Home</span></div>
-                        <div><span class="light"></span><span>Language</span></div>
-                        <div><span class="light"></span><span>Personalization</span></div>
+                        <div class="active"><span class="light"></span><span>หน้าแรก</span></div>
+                        <div><span class="light"></span><span>ภาษา</span></div>
+                        <div><span class="light"></span><span>การปรับเปลี่ยนในแบบของคุณ</span></div>
                     </div>
                 </div>
                 <div class="gc gc--2-of-3">
@@ -185,26 +190,26 @@
                         <li class="active">
 
                             <div class="Welcome-More">
-                                <p class="Sett-introduc">This is<span>Peakk Portfolio<i class='bx bxs-cog'></i></span></p>
+                                <p class="Sett-introduc">สวัสดีครับ,นี้คิอ<span>การตั้งค่า<i class='bx bxs-cog'></i></span></p>
                                 <div class="expain">
                                     <p>
-                                        Any settings its do you need on here you can surf some settings on here.
+                                        คุณต้องการการตั้งค่าใด ๆ ที่นี่ คุณสามารถท่องการตั้งค่าบางอย่างได้ที่นี่
                                     </p>
                                 </div>
                                 <div class="Exit-ToHome">
-                                    <button onclick="Off2()">Exit to lobby?</button>
+                                    <button onclick="Off2()">กลับไปหน้าแรก</button>
                                 </div>
                             </div>
 
                         </li>
                         <li>
                             <div class="lang-sys">
-                                <h1>Select Your language</h1>
+                                <h1>เลือกภาษาภูมิภาค</h1>
 
                                 <div class="language">
                                     <div class="lang-conn">
-                                        <a href="#">English</a>
-                                        <a href="#">Thai</a>
+                                        <a href="../../../index.html">English</a>
+                                        <a onclick="Off2()">Thai</a>
                                     </div>
                                 </div>
 
@@ -213,15 +218,15 @@
                         <li>
                             <!-- dark mode pericnalization -->
                             <div class="Theme-Sys">
-                                <h1>Select your theme</h1>
+                                <h1>เลือกธีมที่ต้องการ</h1>
 
                                 <div class="color-sysche">
                                     <div class="Theme">
                                         <div class="Theme-Selecter">
-                                            <a href="../index.html"><img src="../Theme/Defauit.png" alt="">Pixel design</a>
+                                            <a onclick="Off2()" href="../../Thai/Thai.html"><img src="../../../Theme/Defauit.png" alt="">Pixel design</a>
                                         </div>
                                         <div class="Theme-Selecter">
-                                            <a  onclick="Off2()"><img src="../Theme/Web3.png" alt="">Cyberpunk design</a>
+                                            <a href="Personalization/Web3.html"><img src="../../../Theme/Web3.png" alt="">Cyberpunk design</a>
                                         </div>
                                     </div>
                                 </div>
@@ -264,8 +269,8 @@
         <li class="l-section section section--is-active">
             <div class="intro">
                 <div class="intro--banner">
-                    <h1>This is<br><strong>Peakk</strong><br>Portfolio</h1>
-                    <button class="cta">Hire Us
+                    <h1>สวัสดีครับ<br><strong>นี้คือผลงาน</strong><br>ของผมครับ.</h1>
+                    <button class="cta">นี้คือผลงานของผม
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
                             style="enable-background:new 0 0 150 118;" xml:space="preserve">
@@ -276,23 +281,21 @@
                         </svg>
                         <span class="btn-background"></span>
                     </button>
-                    <img src="../1711361629301.png" alt="">
+                    <img src="../../../1711361629301.png" alt="">
                 </div>
                 <div class="intro--options">
                     <a href="" target="_blank">
-                        <h3>About Me</h3>
-                        <p>Hello my name is peakk frontend web developer Html & Css but javascript i know a little bit
-                            sorry.</p>
+                        <h3>เกียวกับผม</h3>
+                        <p>สวัสดีครับ,ผมชื่อ "พึค" เป็น "Frontend Web Developer" ภาษาที่เขียนก็ Html & Css JavaScript</p>
                     </a>
                     <a href="" target="_blank">
-                        <h3>Project</h3>
-                        <p>I have project a lot but ain't done yet but i have twister web blog platform to make it
-                            successfully.</p>
+                        <h3>โปรเจค</h3>
+                        <p>โปรเจคอ่ะเหรอครับ ก็มีอ่ะครับแต่โปรเจค "ผลงานของผมก็" สําคัญที่สุดครับ ผมทําโปรเจอนี้ก็ทํานานนะครับ</p>
                     </a>
                     <a href="" target="_blank">
-                        <h3>experience</h3>
-                        <p>My experience i start to make a website when i'am 11 year ago end of year 2022 to 2024 today
-                            me is 13 year ago.</p>
+                        <h3>ประสบการณ์</h3>
+                        <p>ประสบการณ์ของผมเริ่มสร้างเว็บไซต์เมื่อฉันอายุ 11 ปีตอนสิ้นปี 2565 ถึง 2567 ตอนนี้
+                            ผมอายุ 13 ปีครับ</p>
                     </a>
                 </div>
             </div>
@@ -303,13 +306,14 @@
             <li class="l-section section">
                 <div class="about">
                     <div class="about--banner">
-                        <h2>Hello,<br>Let's<br>Know<span>To message me?</span><br></h2>
+                        <h2>ผมไม่รู้จักคุณ<br>เรามารู้<br>socital media<span>เพื่อติดต่อมาหาผม</span><br></h2>
                         <a class="about-buttons-on-responsive" href="">View More</a>
                         </a>
                         <i class='bx bx-mail-send'></i>
                     </div>
                     <div class="glitch-wrapper">
-                        <div class="glitch" data-text="This is my social media">This is my social media.</div>
+                        <div class="glitch" data-text="This is my social media">
+                            นี่คือโซเชียลมีเดียของผม</div>
                     </div>
 
                     <div class="icon2">
@@ -331,10 +335,11 @@
             <div class="comment">
                 <div class="comm-conn">
                     <div class="comment-text">
-                        <h1>This, is my all<span>Developer</span>
-                            <h2>Of Peakk portfolio a developer to know it you see at the bottom they will have a button
-                                click it to begin.</h2>
-                            <li onclick="on()"><a>All my developer?</a></li>
+                        <h1>นีคือนักพัฒนาเว็บ<span>ทั้งหมดของโปรเจคนี้</span>
+                            <h2>นักพัฒนาพอร์ตโฟลิโอทั้งหมด (ผลงาน) ถ้าคุณอยากรู้ว่าคุณเห็นที่ด้านล่างพวกเขาจะมีปุ่มด่านล่าง
+                                คลิกเพื่อเริ่มต้น</h2>
+                            <li onclick="on()"><a>นีคือนักพัฒนาเว็บ
+                                ทั้งหมด?</a></li>
                         </h1>
                     </div>
                     <div class="background">
@@ -350,7 +355,7 @@
         </div>
 
         <!-- slider card -->
-
+    <!-- DONT USE DONT ELASE ANY THING -->
 
         <div class="slider owl-carousel">
             <div class="card">
@@ -468,7 +473,7 @@
         AOS.init();
     </script>
 
-    <script src="../script.js"></script>
+    <script src="../../../script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </body>

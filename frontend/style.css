@@ -2334,7 +2334,7 @@ body.dark .card .content p {
   }
 
   body.dark .menu {
-    background: rgba(7, 7, 7, 0.969);
+    background: rgb(7, 7, 7);
     width: 220px;
   }
 
@@ -2716,6 +2716,18 @@ body.dark .card .content p {
     display: none;
   }
 
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+  
+  .comment-text li a {
+    padding: 0.4rem 1rem;
+    font-size: 16px;
+  }
+
   .Highlight {
     background-color: #f5d672;
     color: #000;
@@ -2773,7 +2785,10 @@ body.dark .card .content p {
     margin-bottom: 4rem;
   }
   .comment-text h2 {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .circles li {
+    scale: 60%; 
   }
 }
 
@@ -3600,6 +3615,12 @@ body.dark .alert-choice {
 @media screen and (max-width: 320px) {
   .alert-choice a {
     padding: 0.45rem 1rem;
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
   }
 }  
 

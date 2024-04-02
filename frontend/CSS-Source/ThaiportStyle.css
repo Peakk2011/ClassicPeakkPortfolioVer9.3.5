@@ -249,6 +249,9 @@ nav .nav-bar .logo a {
     .comment-text {
         margin-bottom: 3rem;
     }
+    .nav-bar .nav-links a {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 720px) {
@@ -282,5 +285,11 @@ nav .nav-bar .logo a {
     }
     .comment-text h1 {
         font-size: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .menu {
+        width: 320px;
     }
 }

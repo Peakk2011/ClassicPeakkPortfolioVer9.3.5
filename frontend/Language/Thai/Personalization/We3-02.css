@@ -399,6 +399,41 @@ nav .nav-bar .logo a {
   font-size: 22px;
 }
 
+.MoblieShow {
+  opacity: 0;
+  position: absolute;
+  z-index: -999;
+}
+
+.Mtxt {
+  opacity: 0;
+  position: absolute;
+  z-index: -999;
+}
+
+.nav-bar .nav-links .MoblieShow {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.nav-links .MoblieShow a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 900;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 5px 15px;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) all 0.5s;
+}
+
+.nav-links .MoblieShow i {
+  margin-right: 0.5rem;
+  font-size: 22px;
+}
+
+
 #Selecter i {
   display: inline-block;
   transform: translateY(3.5px);
@@ -2292,7 +2327,7 @@ body.dark .card .content p {
   }
 
   .nav-links .navhover a {
-    border-bottom: solid 2px #f5d672;
+    border-bottom: solid 2px #bbd8d4;
     color: #000000;
     width: 170px;
     padding: 0.7rem;
@@ -2301,7 +2336,7 @@ body.dark .card .content p {
 
   body.dark .nav-links .navhover a {
     color: #fff;
-    border-bottom: solid 2px #ddf5db;
+    border-bottom: solid 2px #bbd8d4;
   }
 
   .nav-bar .nav-links .navhover {
@@ -2320,6 +2355,45 @@ body.dark .card .content p {
   }
   body .nav-links .navhover a {
     padding: 0.5rem 0rem;
+  }
+  body .nav-links .MoblieShow a {
+    padding: 0.5rem 0rem;
+  }
+  /* Mobile toggle show on responsive */
+  .MoblieShow {
+    opacity: 1;
+    position: static;
+  }
+  .Mtxt {
+    opacity: 1;
+    margin-top: 2.5rem;
+    font-size: 22px;
+    text-decoration: underline;
+    position: static;
+  }
+  body .MoblieShow a p {
+    display: block;
+  }
+  /* mobile */
+  .nav-bar .nav-links .MoblieShow {
+    margin: 0 0px;
+    list-style: none;
+  }
+
+  .nav-links .MoblieShow i {
+    display: flex;
+  }
+  .nav-links .MoblieShow a {
+    border-bottom: solid 2px #bbd8d4;
+    color: #000000;
+    width: 170px;
+    padding: 0.7rem;
+    font-size: 18px;
+  }
+
+  body.dark .nav-links .MoblieShow a {
+    color: #fff;
+    border-bottom: solid 2px #bbd8d4;
   }
 
 }
@@ -2516,6 +2590,15 @@ body.dark .card .content p {
   }
   body .icons {
     max-width: 495px;
+  }
+}
+
+@media (max-width: 900px) {
+  .naccs {
+    display: none;
+  }
+  #MoreOPti {
+    display: none;
   }
 }
 

@@ -3908,3 +3908,13 @@ body.dark .alert-choice {
       display: inline-block;
   }
 }
+
+@media (max-width: 412px) {
+  .intro--options p {
+      line-height: 1;
+      font-size: 9px;
+  }
+  .intro--options h3 {
+      font-size: 12px;
+  }
+}

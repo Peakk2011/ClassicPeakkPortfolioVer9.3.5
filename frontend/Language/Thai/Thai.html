@@ -34,11 +34,12 @@
 
     <!-- google icons -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-        <!-- LINKS THAI STYLE ON LANGUAGE -->
-        <link rel="stylesheet" href="../../Font-Thai.css">
-        <link rel="stylesheet" href="../../CSS-Source/ThaiportStyle.css">
+    <!-- LINKS THAI STYLE ON LANGUAGE -->
+    <link rel="stylesheet" href="../../Font-Thai.css">
+    <link rel="stylesheet" href="../../CSS-Source/ThaiportStyle.css">
 </head>
 
 <body>
@@ -124,18 +125,35 @@
                     <i class='bx bx-x siderbarClose'></i>
                 </div>
                 <ul class="nav-links">
-                    <li class="navhover" id="Selecter"><a href="./About.html"><i class='bx bx-search bx-flip-horizontal' ></i><span>ชนินทร์ยุทธ</span></a></li>
-                    <li class="navhover" onclick="on()" ><a><i class='bx bx-user'></i><p>เกียวกับผม</p></a></li>
-                    <li class="navhover"><a href="#"><i class='bx bx-book-content'></i><p>โปรเจค</p></a></li>
-                    <li class="navhover"><a href="#"><i class='bx bx-donate-heart'></i><p>สนับสนุน</p></a></li>
-                    <li class="navhover" id="MoreOPti" onclick="ON2()"><a><i class='bx bx-exit'></i><p id="myBtn">ตัวเลือกเพิ่มเติม</p></a></li>
+                    <li class="navhover" id="Selecter"><a href="./About.html"><i
+                                class='bx bx-search bx-flip-horizontal'></i><span>ชนินทร์ยุทธ</span></a></li>
+                    <li class="navhover" onclick="on()"><a><i class='bx bx-user'></i>
+                            <p>เกียวกับผม</p>
+                        </a></li>
+                    <li class="navhover"><a href="#"><i class='bx bx-book-content'></i>
+                            <p>โปรเจค</p>
+                        </a></li>
+                    <li class="navhover" onclick="launch_toast()"><a href="#"><i class='bx bx-donate-heart'></i>
+                            <p>สนับสนุน</p>
+                        </a></li>
+                    <li class="navhover" id="MoreOPti" onclick="ON2()"><a><i class='bx bx-exit'></i>
+                            <p id="myBtn">ตัวเลือกเพิ่มเติม</p>
+                        </a></li>
                     <!-- Theme selecter on mobile display none on desktop device -->
                     <h1 class="Mtxt">การปรับเปลี่ยนธีม</h1>
-                    <li class="MoblieShow"><a href="#"><i class='bx bx-spray-can'></i><p>ค่าเริ่มต้น</p></a></li>
-                    <li class="MoblieShow"><a href="./Personalization/Web3.html"><i class='bx bx-spray-can'></i><p>ไซเบอร์พังค์</p></a></li>
+                    <li class="MoblieShow"><a href="#"><i class='bx bx-spray-can'></i>
+                            <p>ค่าเริ่มต้น</p>
+                        </a></li>
+                    <li class="MoblieShow"><a href="./Personalization/Web3.html"><i class='bx bx-spray-can'></i>
+                            <p>ไซเบอร์พังค์</p>
+                        </a></li>
                     <h1 class="Mtxt">ภาษาและภูมิภาค</h1>
-                    <li class="MoblieShow"><a href="../../index.html"><i class='bx bx-globe' ></i><p>ภาษาอังกฤษ</p></a></li>
-                    <li class="MoblieShow"><a href="#"><i class='bx bx-globe' ></i><p>ภาษาไทย</p></a></li>                    
+                    <li class="MoblieShow"><a href="../../index.html"><i class='bx bx-globe'></i>
+                            <p>ภาษาอังกฤษ</p>
+                        </a></li>
+                    <li class="MoblieShow"><a href="#"><i class='bx bx-globe'></i>
+                            <p>ภาษาไทย</p>
+                        </a></li>
                 </ul>
             </div>
             <div class="darkLight-searchBox">
@@ -156,6 +174,12 @@
             </div>
         </div>
     </nav>
+
+    <!-- welcome sereen -->
+    <div id="toast">
+        <div id="img"><i class='bx bxs-bell-ring bx-tada'></i></div>
+        <div id="desc">ขอบคุณมากนะครับ, ไม่ต้องห้วงนะครับผมยินดีที่เห็นว่าคุณสนใจเว็บไซต์ของผมครับ.</div>
+    </div>
 
     <!-- pop up will click more options -->
 
@@ -193,7 +217,8 @@
                         <li class="active">
 
                             <div class="Welcome-More">
-                                <p class="Sett-introduc">สวัสดีครับ,นี้คิอ<span>การตั้งค่า<i class='bx bxs-cog'></i></span></p>
+                                <p class="Sett-introduc">สวัสดีครับ,นี้คิอ<span>การตั้งค่า<i
+                                            class='bx bxs-cog'></i></span></p>
                                 <div class="expain">
                                     <p>
                                         คุณต้องการการตั้งค่าใด ๆ ที่นี่ คุณสามารถท่องการตั้งค่าบางอย่างได้ที่นี่
@@ -226,10 +251,12 @@
                                 <div class="color-sysche">
                                     <div class="Theme">
                                         <div class="Theme-Selecter">
-                                            <a onclick="Off2()"><img src="../../Theme/Defauit.png" alt="">Pixel design</a>
+                                            <a onclick="Off2()"><img src="../../Theme/Defauit.png" alt="">Pixel
+                                                design</a>
                                         </div>
                                         <div class="Theme-Selecter">
-                                            <a href="Personalization/Web3.html"><img src="../../Theme/Web3.png" alt="">Cyberpunk design</a>
+                                            <a href="Personalization/Web3.html"><img src="../../Theme/Web3.png"
+                                                    alt="">Cyberpunk design</a>
                                         </div>
                                     </div>
                                 </div>
@@ -289,11 +316,13 @@
                 <div class="intro--options">
                     <a href="" target="_blank">
                         <h3>เกียวกับผม</h3>
-                        <p>สวัสดีครับ,ผมชื่อ "พึค" เป็น "Frontend Web Developer" ภาษาที่เขียนก็ Html & Css JavaScript</p>
+                        <p>สวัสดีครับ,ผมชื่อ "พึค" เป็น "Frontend Web Developer" ภาษาที่เขียนก็ Html & Css JavaScript
+                        </p>
                     </a>
                     <a href="" target="_blank">
                         <h3>โปรเจค</h3>
-                        <p>โปรเจคอ่ะเหรอครับ ก็มีอ่ะครับแต่โปรเจค "ผลงานของผมก็" สําคัญที่สุดครับ ผมทําโปรเจอนี้ก็ทํานานนะครับ</p>
+                        <p>โปรเจคอ่ะเหรอครับ ก็มีอ่ะครับแต่โปรเจค "ผลงานของผมก็" สําคัญที่สุดครับ
+                            ผมทําโปรเจอนี้ก็ทํานานนะครับ</p>
                     </a>
                     <a href="" target="_blank">
                         <h3>ประสบการณ์</h3>
@@ -339,10 +368,11 @@
                 <div class="comm-conn">
                     <div class="comment-text">
                         <h1>นีคือนักพัฒนาเว็บ<span>ทั้งหมดของโปรเจคนี้</span>
-                            <h2>นักพัฒนาพอร์ตโฟลิโอทั้งหมด (ผลงาน) ถ้าคุณอยากรู้ว่าคุณเห็นที่ด้านล่างพวกเขาจะมีปุ่มด่านล่าง
+                            <h2>นักพัฒนาพอร์ตโฟลิโอทั้งหมด (ผลงาน)
+                                ถ้าคุณอยากรู้ว่าคุณเห็นที่ด้านล่างพวกเขาจะมีปุ่มด่านล่าง
                                 คลิกเพื่อเริ่มต้น</h2>
                             <li onclick="on()"><a>นีคือนักพัฒนาเว็บ
-                                ทั้งหมด?</a></li>
+                                    ทั้งหมด?</a></li>
                         </h1>
                     </div>
                     <div class="background">
@@ -358,7 +388,7 @@
         </div>
 
         <!-- slider card -->
-    <!-- DONT USE DONT ELASE ANY THING -->
+        <!-- DONT USE DONT ELASE ANY THING -->
 
         <div class="slider owl-carousel">
             <div class="card">

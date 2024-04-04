@@ -293,3 +293,8 @@ nav .nav-bar .logo a {
         width: 320px;
     }
 }
+
+  #toast #desc{
+     font-family: MiSans-th-DemoBold;
+     font-size: 18px;
+  }

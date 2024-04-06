@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: sans-serif;">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="logolight.png">
+</head>
+
+<body class="the-body">
+
+    <div class="bouncing-blobs-container">
+        <div class="bouncing-blobs-glass"></div>
+        <div class="bouncing-blobs">
+            <div class="bouncing-blob bouncing-blob--blue"></div>
+            <div class="bouncing-blob bouncing-blob--blue"></div>
+            <div class="bouncing-blob bouncing-blob--blue"></div>
+            <div class="bouncing-blob bouncing-blob--white"></div>
+            <div class="bouncing-blob bouncing-blob--purple"></div>
+            <div class="bouncing-blob bouncing-blob--purple"></div>
+            <div class="bouncing-blob bouncing-blob--pink"></div>
+        </div>
+    </div>
+
+    <span id="react-root">
+        <section class="ig-section-1">
+            <main class="the-main">
+                <div class="the-outer-1">
+                    <article class="the-outer-2">
+                        <div class="the-center-strip-container">
+                            <div class="login-elements">
+                                <h1>
+                                    <!-- <img class="ig-logo" src="mylogon.png"> -->
+                                    <div class="ig-logo">
+                                        <h1>Twi<span>ster</span></h1>
+                                    </div>
+                                </h1>
+                                <div class='login-forms-container'>
+                                    <form class="login-forms" method="post">
+
+                                        <div class="username-password-container">
+                                            <div class="username-password-container-2">
+                                                <input class="username-password-input" id="username" name="name"
+                                                    maxlength="75" type="text" value placeholder="Email">
+                                                <div class="unknown-1"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="username-password-container">
+                                            <div class="username-password-container-2">
+                                                <input class="username-password-input" id="username" name="name"
+                                                    maxlength="75" type="text" value placeholder="Your Name">
+                                                <div class="unknown-1"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="username-password-container">
+                                            <div class="username-password-container-2">
+                                                <div class="password-form-container">
+                                                    <input class="username-password-input" id="password" name='password'
+                                                        type='password' value placeholder="Password">
+                                                    <div class="unknown"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- more login comfirm password -->
+
+                                        <div class="username-password-container">
+                                            <div class="username-password-container-2">
+                                                <div class="password-form-container">
+                                                    <input class="username-password-input" id="password" name='password'
+                                                        type='password' value placeholder="comfirm Password">
+                                                    <div class="unknown"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="login-button">
+                                            <a href="index.html" class='button'>Login</a>
+                                        </span>
+                                        <a class="forgot-password" href="/accounts/password/reset">Forgot Password?</a>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="sign-up">
+                                <p class='sign-up-p'>
+                                    have an account?
+                                    <a class="sign-up-a" href="./login.html">Login</a>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </main>
+        </section>
+    </span>
+
+    <style>
+        /* DM SANS MY FAV FONT */
+
+        /* USEED font-family: 'DM Sans', sans-serif; */
+
+        @font-face {
+            font-family: SATO;
+            src: url(./Font/Satoshi-Bold.ttf);
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
+
+        * {
+            font-synthesis: none;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            user-select: none;
+        }
+
+        body {
+            font-size: 14px;
+            line-height: 18px;
+            height: 100%;
+            overflow-y: scroll;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            vertical-align: baseline;
+            justify-content: center;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        input {
+            line-height: 18px;
+        }
+
+        div article main footer nav section label {
+            align-items: stretch;
+            border: 0 solid #000;
+            display: flex;
+            flex-shrink: 0;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            vertical-align: baseline;
+            box-sizing: border-box;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        form {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            vertical-align: baseline;
+        }
+
+        ul {
+            font-family: 'DM Sans', sans-serif;
+            list-style: none;
+        }
+
+        #react-root body html {
+            z-index: 0;
+            height: 100%;
+        }
+
+        .ig-section-1 {
+            min-height: 100%;
+            overflow: hidden;
+        }
+
+        .the-main {
+            justify-content: center;
+            flex-grow: 1;
+            order: 4;
+            align-items: center;
+        }
+
+        .the-outer-1 {
+            min-height: 100%;
+            overflow: hidden;
+            flex-direction: row;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        .the-outer-2 {
+            margin: 0 auto;
+            max-width: 310px;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .the-center-strip-container {
+            color: #262626;
+            margin-top: 250px;
+            animation: scaling 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        @keyframes scaling {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+                filter: blur(50px);
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+                filter: blur(0px);
+            }
+        }
+
+        .login-elements {
+            margin: 0 0 10px;
+            padding: 10px 0;
+            justify-content: center;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.5);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+        }
+
+        /* .ig-logo {
+            scale: 50%;
+            transform: translateX(-170px);
+            display: flex;
+            overflow: hidden;
+            height: 150px;
+            margin: auto;
+            object-fit: cover;
+        } */
+
+        .ig-logo h1 {
+            display: flex;
+            font-family: SATO;
+            align-items: center;
+            justify-content: center;
+            font-size: 62px;
+        }
+
+        .ig-logo span {
+            background-color: #000;
+            color: #fff;
+            height: 30px;
+            padding: 0.7rem 0.5rem;
+            margin-left: 5px;
+        }
+
+        .login-forms-container {
+            margin-bottom: 10px;
+        }
+
+        .login-forms {
+            display: flex;
+            flex-direction: column;
+            transform: translateY(-10px);
+            animation: slide 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .username-password-container {
+            display: flex;
+            margin: 0 40px 6px;
+            align-items: center;
+            border-radius: 3px;
+            box-sizing: border-box;
+            flex-direction: row;
+            font-size: 14px;
+            position: relative;
+            border-radius: 6px;
+            background-color: #fafafa;
+        }
+
+        .username-password-container-2 {
+            flex: 1 0 0;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            width: 100%;
+        }
+
+        .username-password-input {
+            background-color: #fafafa;
+            font-size: 16px;
+            border: 0px;
+            flex: 1px 0 0;
+            margin: 0;
+            outline: 0;
+            padding: 9px 0 7px 8px;
+            width: 100%;
+        }
+
+        .login-button {
+            margin: 8px 40px;
+            display: block;
+            position: relative;
+        }
+
+        .button {
+            padding: 7px 100px;
+            text-decoration: none;
+            background-color: #000000;
+            line-height: 26px;
+            color: #fff;
+            font-size: 16px;
+            font-family: 'DM Sans', sans-serif;
+            border-radius: 6px;
+            display: block;
+            width: 35px;
+        }
+
+        .forgot-password {
+            font-size: 14px;
+            margin-top: 16px;
+            color: #000000;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 900;
+            font-family: SATO;
+        }
+
+        .sign-up {
+            margin: 0 0 50px;
+            padding: 10px 0;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.5);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+        }
+
+        .sign-up-p {
+            text-align: center;
+            margin: 15px;
+            color: #262626;
+            font-weight: 900;
+            font-size: 14px;
+            font-family: SATO;
+        }
+
+        .sign-up-a {
+            color: #1f1f1f;
+
+        }
+
+        .get-the-app-p {
+            text-align: center;
+            color: #262626;
+            font-size: 14px;
+            line-height: 18px;
+            margin: 10px 20px;
+        }
+
+        .android-google-container {
+            flex-direction: row;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .app-img {
+            margin-right: 8px;
+        }
+
+        .app-img-1 {
+            height: 40px;
+        }
+
+        @media only screen and (max-height: 765px) {
+            .the-center-strip-container {
+                margin-top: 50px;
+            }
+        }
+
+        @media only screen and (max-width: 460px) {
+            .the-center-strip-container {
+                margin-top: 120px;
+            }
+
+            .login-elements {
+                border: none;
+            }
+
+            .sign-up {
+                border: none;
+            }
+        }
+
+        @media only screen and (max-width: 320px) {
+            .the-center-strip-container {
+                margin-top: 100px;
+            }
+
+            .ig-logo {
+                transform: translateX(-200px);
+            }
+        }
+
+        .bouncing-blob {
+            width: 32vw;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            will-change: transform;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            transform-origin: left top;
+        }
+
+        .bouncing-blob--blue {
+            background: #4783c728;
+        }
+
+        .bouncing-blob--purple {
+            background: #8c8ff126;
+        }
+
+        .bouncing-blob--pink {
+            background: #e289cd1a;
+        }
+
+        .bouncing-blobs-container {
+            position: fixed;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bouncing-blobs-glass {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(140px);
+            -webkit-backdrop-filter: blur(140px);
+            pointer-events: none;
+        }
+
+        .bouncing-blobs {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #000000;
+            }
+
+            body a {
+                color: #809fff;
+            }
+
+            .bouncing-blob--blue {
+                background: #4783c724;
+            }
+
+            .bouncing-blob--purple {
+                background: #8c8ff116;
+            }
+
+            .bouncing-blob--pink {
+                background: #e289cd3a;
+            }
+
+            .login-elements {
+                background: rgb(0 0 0 / 53%);
+                backdrop-filter: blur(85px);
+            }
+            
+            .username-password-input {
+                border-radius: 4px;
+                background-color: #000;
+                color: #d0e3b4;
+            }
+
+            .forgot-password {
+                color: #d0e3b4;
+            }
+            .sign-up {
+                background: rgba(0, 0, 0, 0.446);
+            }
+            
+            .sign-up-p {
+                color: #d0e3b4;;
+            }
+
+            .sign-up-a {
+                color: #d0e3b4;;
+            }
+
+            .ig-logo span {
+                background-color: #fff;
+                color: #000;
+            }
+
+            .ig-logo h1 {
+                color: #fff;
+            }
+            
+        }
+    </style>
+
+    <script>
+        const MIN_SPEED = 1.5
+        const MAX_SPEED = 2.5
+
+        function randomNumber(min, max) {
+            return Math.random() * (max - min) + min
+        }
+
+        class Blob {
+            constructor(el) {
+                this.el = el
+                const boundingRect = this.el.getBoundingClientRect()
+                this.size = boundingRect.width
+                this.initialX = randomNumber(0, window.innerWidth - this.size)
+                this.initialY = randomNumber(0, window.innerHeight - this.size)
+                this.el.style.top = `${this.initialY}px`
+                this.el.style.left = `${this.initialX}px`
+                this.vx =
+                    randomNumber(MIN_SPEED, MAX_SPEED) * (Math.random() > 0.5 ? 1 : -1)
+                this.vy =
+                    randomNumber(MIN_SPEED, MAX_SPEED) * (Math.random() > 0.5 ? 1 : -1)
+                this.x = this.initialX
+                this.y = this.initialY
+            }
+
+            update() {
+                this.x += this.vx
+                this.y += this.vy
+                if (this.x >= window.innerWidth - this.size) {
+                    this.x = window.innerWidth - this.size
+                    this.vx *= -1
+                }
+                if (this.y >= window.innerHeight - this.size) {
+                    this.y = window.innerHeight - this.size
+                    this.vy *= -1
+                }
+                if (this.x <= 0) {
+                    this.x = 0
+                    this.vx *= -1
+                }
+                if (this.y <= 0) {
+                    this.y = 0
+                    this.vy *= -1
+                }
+            }
+
+            move() {
+                this.el.style.transform = `translate(${this.x - this.initialX}px, ${this.y - this.initialY
+                    }px)`
+            }
+        }
+
+        function initBlobs() {
+            const blobEls = document.querySelectorAll('.bouncing-blob')
+            const blobs = Array.from(blobEls).map((blobEl) => new Blob(blobEl))
+
+            function update() {
+                requestAnimationFrame(update)
+                blobs.forEach((blob) => {
+                    blob.update()
+                    blob.move()
+                })
+            }
+
+            requestAnimationFrame(update)
+        }
+
+        initBlobs()
+
+    </script>
+
+</body>
+
+</html>

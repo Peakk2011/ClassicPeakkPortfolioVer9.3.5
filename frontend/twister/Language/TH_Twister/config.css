@@ -1,0 +1,95 @@
+@media only screen and (max-width: 700px) {
+    .wrapperTYPE {
+        transform: translateY(-200px);
+    }
+    
+    .get h2 { 
+        line-height: 1;
+    }
+
+    .hero h1 {
+        margin-top: 20px;
+    }
+
+    body .h1twisterimage h1 {
+        font-size: 45px;
+    }
+
+    .typing-demo-2 {
+        transform: translateY(-65px);
+    }
+
+    body .info h1 {
+        font-size: 2.5em;
+    }
+
+    .typing-demo {
+        transform: translateY(-10px);
+    }
+
+    .get h2 {
+        font-size: 80px;
+    }
+
+    .deconaton h2 {
+        transform: translateY(-18px);
+        max-width: 76%;
+        margin-top: 40px;
+    }
+
+    .hero h1 {
+        font-size: 61px;
+    }
+
+    body.dark .typing-demo {
+        letter-spacing: -0px;
+    }
+
+    body .h1twisterimage h1 {
+        font-size: 37px;
+    }
+
+    body .get h2 {
+        font-size: 72px;
+    }
+}
+
+.deconaton h2 {
+    width: 80%;
+}
+
+.get h2 {
+    font-size: 100px;
+}
+
+
+/* color config darkmode */
+
+body.dark .get h2 {
+    color: #d0e3b4;
+}
+
+body.dark .typing-demo {
+    color: #d0e3b4;
+}
+
+body.dark .typing-demo-2 {
+    color: #d0e3b4;
+}
+
+body.dark .imageTw {
+    background: url(../TextlogoDark.png) no-repeat;
+    background-position: 2rem;
+    width: 300px;
+    background-size: 70%;
+}
+
+.sidenav a {
+    font-weight: 400;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+.card-body h1 {
+    font-weight: 400;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}

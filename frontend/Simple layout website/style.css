@@ -1,0 +1,572 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI Historic;
+    user-select: none;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+body {
+    background-color: #eee;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* nav {
+    background-color: #fafafa;
+} */
+
+.navbar {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+}
+
+.navbar .nav-content {
+    display: flex;
+}
+
+.navbar .nav-content li a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    padding-left:  1rem;
+    padding-right: 1rem;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-title h1 {
+    color: #fff;
+}
+
+.navbar .nav-content li {
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    background: url(https://wallpapercave.com/wp/wp9098884.jpg) no-repeat;
+    height: 500px;
+    background-position: center;
+    background-size: cover;;
+}
+
+.header-area {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+.header-text h1 {
+    color: #fff;
+    font-size: 36px;
+    width: 220px;
+}
+
+.header-text p {
+    color: #fff;
+    width: 340px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.header-btn {
+    margin-top: 30px;
+}
+
+.header-btn a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0.4rem 1.5rem;
+    font-size: 18px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    font-weight: 900;
+}
+
+.intro {
+    background-color: #eee;
+    height: 400px;
+}
+
+.intro-conn {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+    justify-content: space-between;
+}
+
+.intro-image img {
+    width: 500px;
+    border-radius: 8px;
+}
+
+.intro-text p {
+    margin-top: 15px;
+    width: 250px;
+    font-weight: 600;
+    font-size: 17px;
+    color: #1f1f1f;
+}
+
+.intro-text h1 {
+    width: 250px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1px;
+    font-size: 34px;
+    color: #000000;
+}
+
+.text-about-area {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.text-h1 {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.text-about {
+    height: 440px;
+    align-items: center;
+    display: flex;
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.text-flex-about {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-content h1 {
+    margin-bottom: 0.5rem;
+}
+
+.text-content {
+    margin-bottom: 3rem;
+}
+
+.about-us {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-us-text {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.about-us-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.about-us-img img {
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.about-us-people {
+    background-color: #f1f1f1;
+}
+
+.invite {
+    background: url(https://wallpapercave.com/wp/wp9099375.jpg);
+    /* background: url(https://wallpapercave.com/wp/wp9099921.png); */
+    height: 420px;
+    background-position: center;
+    background-size: cover;
+}
+
+.invite-conn {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.invite-text {
+    padding-top: 5rem;
+    color: #ffffff;
+}
+
+.invite-text p {
+    width: 340px;
+    margin-top: 15px;
+}
+
+.invite-text h1 {
+    width: 300px;
+}
+
+footer {
+    text-align: center;
+    height: 200px;
+}
+
+footer h1 {
+    padding-top: 5rem;
+    color: #000;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1200px) {
+    .header-area {
+        max-width: 800px;
+    }
+
+    .navbar {
+        max-width: 800px;
+    }
+
+    .intro-conn {
+        max-width: 800px;   
+    }
+
+    .intro-image img {
+        width: 400px;
+    }
+
+    .text-about-area {
+        max-width: 800px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+
+    .intro-text p {
+        font-size: 14px;
+    }
+
+    .about-us {
+        max-width: 800px;
+    }
+
+    .invite-conn {
+        max-width: 800px;
+    }
+
+    footer h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    
+    .about-us {
+        max-width: 600px;
+    }
+
+    .invite-conn {
+        max-width: 600px;
+    }
+
+    .header-area {
+        max-width: 600px;
+    }
+
+    .navbar {
+        max-width: 600px;
+    }
+
+    .intro-conn {
+        max-width: 600px;   
+    }
+    
+    .text-about-area {
+        max-width: 600px;
+    }
+    
+    .text-flex-about {
+        flex-direction: column;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .text-h1 {
+        display: none;
+    }
+
+    .text-about {
+        height: 520px;
+    }
+
+    .intro-image img {
+        width: 300px;
+        border-radius: 4px;
+    }
+
+    .about-us-img img {
+        width: 150px;
+    }
+
+    footer h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    .about-us {
+        max-width: 500px;
+    }
+
+    .invite-conn {
+        max-width: 500px;
+    }
+
+    .intro-conn {
+        display: block;
+    }
+
+    .intro {
+        height: 475px;
+    }
+
+    .intro-image img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }   
+
+    .header-area {
+        max-width: 500px;
+    }
+
+    .navbar {
+        max-width: 500px;
+    }
+
+    .intro-conn {
+        max-width: 500px;   
+    }
+    
+    .text-about-area {
+        max-width: 500px;
+    }
+
+    .about-us-img img {
+        width: 120px;
+    }
+
+    footer h1 {
+        font-size: 20px;
+        padding-top: 2.2rem;
+    }
+
+    footer {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .about-us {
+        max-width: 350px;
+    }
+
+    .invite-conn {
+        max-width: 350px;
+    }
+
+    .header-area {
+        max-width: 350px;
+    }
+
+    .navbar {
+        max-width: 350px;
+        height: 70px;
+        display: block;
+        padding-top: 7px;
+        padding-bottom: 5px;
+    }
+
+    .nav-title h1 {
+        padding-bottom: 1rem;
+        padding-top: 0.8rem;
+    }
+
+    .navbar .nav-content li a {
+        padding-left: 0rem;   
+        padding-right: 2rem;
+    }
+
+    .intro-conn {
+        max-width: 350px;   
+    }
+    
+    .text-about-area {
+        max-width: 350px;
+    }
+
+    .about-us-img img {
+        width: 90px;    
+    }
+
+    .text-about {
+        height: 600px;
+    }
+
+    footer h1 {
+        font-size: 14px;
+        padding-top: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 395px) {
+
+    .about-us {
+        max-width: 300px;
+    }
+
+    .invite-conn {
+        max-width: 300px;
+    }
+
+    .header-area {
+        max-width: 300px;
+    }
+
+    .navbar {
+        max-width: 300px;
+    }
+
+    .intro-conn {
+        max-width: 300px;   
+    }
+
+    .text-about-area {
+        max-width: 300px;
+    }
+
+    .text-about {
+        height: 700px;
+    }
+
+    .invite-text p {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    footer h1 {
+        font-size: 12px;
+        padding-top: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .about-us {
+        max-width: 80%;
+    }
+
+    .invite-conn {
+        max-width: 80%;
+    }
+
+    .header-area {
+        max-width: 80%;
+    }
+
+    .navbar {
+        max-width: 80%;
+    }
+
+    .intro-conn {
+        max-width: 80%;  
+    }
+    
+    .text-about-area {
+        max-width: 80%;
+    }
+
+    .navbar .nav-content li a {
+        padding-right: 1rem;
+    }
+
+    .header-text p {
+        font-size: 16px;
+        width: 70%;
+    }
+
+    .intro-image img {
+        width: 80%;
+    }
+
+    footer h1 {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+
+}
+
+/* dark mode */
+
+@media (prefers-color-scheme: dark) {
+    img {
+      opacity: .75;
+      transition: opacity .5s ease-in-out;
+    }
+    img:hover {
+      opacity: 1;
+    }
+    .text-about {
+        color: #fff;
+        background-color: #090909;
+    }
+    .intro {
+        color: #fff;
+        background-color: #0f0f0f;
+    }
+    .about-us-people {
+        color: #fff;
+        background-color: #0c0c0c;
+    }
+    body {
+        color: #fff;
+        background-color:#0f0f0f;
+    }
+    .intro-text h1 {
+        color: #fff;
+    }
+    .intro-text p {
+        color: #e2e2e2;
+    }
+    footer h1 {
+        color: #fff;
+    }
+  }

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.shopify.com/s/files/1/2979/3338/files/UGC-style.css" />
+    <script type="text/javascript" src="https://cdn.shopify.com/s/files/1/2979/3338/files/UGC_-_new_v.3.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="icon" href="logolight.png">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+    <div class="gallery">
+        <div class="gallery_line">
+            <img src="./WebpostDark.png" />
+            <img src="./WebpostDark.png" />
+            <img src="./WebpostDark.png" />
+        </div>
+    </div>
+
+
+
+    <!-- Upload  -->
+    <form id="file-upload-form" class="uploader">
+
+        <h2 style="font-size: 42px;">Create Post</h2>
+        <p class="lead"><b>Select file and drop to here</b></p>
+
+        <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+
+        <label for="file-upload" id="file-drag">
+            <img id="file-image" src="#" alt="Preview" class="hidden">
+            <div id="start">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                <div></div>
+                <div id="notimage" class="hidden">Please select an image</div>
+                <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+            </div>
+            <div id="response" class="hidden">
+                <div id="messages"></div>
+                <progress class="progress" id="file-progress" value="0">
+                    <span>0</span>%
+                </progress>
+            </div>
+        </label>
+    </form>
+
+    <style>
+        @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+        /* @import url("https://fonts.googleapis.com/css?family=Roboto"); */
+
+        .gallery {
+            position: absolute;
+            z-index: -2;
+            opacity: 20%;
+            filter: blur(5px);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+
+        .gallery_line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        html,
+        body,
+        * {
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        html,
+        body {
+            height: 100%;
+            text-align: center;
+        }
+
+        body {
+            padding-top: 10rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            background: rgb(0, 0, 0);
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        h2 {
+            /* font-family: "Roboto", sans-serif; */
+            line-height: 1;
+            color: #d0e3b4;
+            margin-bottom: 0;
+            /* position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-540%); */
+        }
+
+        p {
+            /* font-family: "Roboto", sans-serif; */
+            font-size: 18px;
+            color: #eeeeee;
+            /* position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-650%); */
+        }
+
+        .lead {
+            font-size: 18px;
+        }
+
+        .uploader {
+            display: block;
+            clear: both;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            animation: scaling 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        @keyframes scaling {
+            0% {
+                opacity: 0;
+                filter: blur(50px);
+            }
+
+            100% {
+                opacity: 1;
+                filter: blur(0px);
+            }
+        }
+
+        .uploader label {
+            float: left;
+            clear: both;
+            width: 100%;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-radius: 7px;
+            transition: all 0.2s ease;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .uploader label:hover {
+            border-color: #454cad;
+        }
+
+        .uploader label.hover {
+            border: 3px solid #454cad;
+            box-shadow: inset 0 0 0 6px #eee;
+        }
+
+        .uploader label.hover #start i.fa {
+            transform: scale(0.8);
+            opacity: 0.3;
+        }
+
+        .uploader #start {
+            float: left;
+            clear: both;
+            width: 100%;
+        }
+
+        .uploader #start.hidden {
+            display: none;
+        }
+
+        .uploader #start i.fa {
+            font-size: 50px;
+            margin-bottom: 1rem;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .uploader #response {
+            float: left;
+            clear: both;
+            width: 100%;
+        }
+
+        .uploader #response.hidden {
+            display: none;
+        }
+
+        .uploader #response #messages {
+            margin-bottom: 0.5rem;
+        }
+
+        .uploader #file-image {
+            display: inline;
+            margin: 0 auto 0.5rem auto;
+            width: auto;
+            height: auto;
+            max-width: 180px;
+        }
+
+        .uploader #file-image.hidden {
+            display: none;
+        }
+
+        .uploader #notimage {
+            display: block;
+            float: left;
+            clear: both;
+            width: 100%;
+        }
+
+        .uploader #notimage.hidden {
+            display: none;
+        }
+
+        .uploader progress,
+        .uploader .progress {
+            display: inline;
+            clear: both;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 180px;
+            height: 8px;
+            border: 0;
+            border-radius: 4px;
+            background-color: #eee;
+            overflow: hidden;
+        }
+
+        .uploader .progress[value]::-webkit-progress-bar {
+            border-radius: 4px;
+            background-color: #eee;
+        }
+
+        .uploader .progress[value]::-webkit-progress-value {
+            background: linear-gradient(to right, #d0e3b4 0%, #abbb94 50%);
+            border-radius: 4px;
+        }
+
+        .uploader .progress[value]::-moz-progress-bar {
+            background: linear-gradient(to right, #393f90 0%, #454cad 50%);
+            border-radius: 4px;
+        }
+
+        .uploader input[type=file] {
+            display: none;
+        }
+
+        .uploader div {
+            margin: 0 0 0.5rem 0;
+            color: #d0e3b4;
+        }
+
+        .uploader .btn {
+            display: inline-block;
+            margin: 0.5rem 0.5rem 1rem 0.5rem;
+            clear: both;
+            font-family: inherit;
+            font-weight: 900;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: initial;
+            border: none;
+            border-radius: 0.2rem;
+            outline: none;
+            padding: 0 1.5rem;
+            height: 36px;
+            line-height: 36px;
+            color: #000000;
+            transition: all 0.2s ease-in-out;
+            box-sizing: border-box;
+            background: #d0e3b4;
+            border-color: #d0e3b4;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        // File Upload
+        // 
+        function ekUpload() {
+            function Init() {
+
+                console.log("Upload Initialised");
+
+                var fileSelect = document.getElementById('file-upload'),
+                    fileDrag = document.getElementById('file-drag'),
+                    submitButton = document.getElementById('submit-button');
+
+                fileSelect.addEventListener('change', fileSelectHandler, false);
+
+                // Is XHR2 available?
+                var xhr = new XMLHttpRequest();
+                if (xhr.upload) {
+                    // File Drop
+                    fileDrag.addEventListener('dragover', fileDragHover, false);
+                    fileDrag.addEventListener('dragleave', fileDragHover, false);
+                    fileDrag.addEventListener('drop', fileSelectHandler, false);
+                }
+            }
+
+            function fileDragHover(e) {
+                var fileDrag = document.getElementById('file-drag');
+
+                e.stopPropagation();
+                e.preventDefault();
+
+                fileDrag.className = (e.type === 'dragover' ? 'hover' : 'modal-body file-upload');
+            }
+
+            function fileSelectHandler(e) {
+                // Fetch FileList object
+                var files = e.target.files || e.dataTransfer.files;
+
+                // Cancel event and hover styling
+                fileDragHover(e);
+
+                // Process all File objects
+                for (var i = 0, f; f = files[i]; i++) {
+                    parseFile(f);
+                    uploadFile(f);
+                }
+            }
+
+            // Output
+            function output(msg) {
+                // Response
+                var m = document.getElementById('messages');
+                m.innerHTML = msg;
+            }
+
+            function parseFile(file) {
+
+                console.log(file.name);
+                output(
+                    '<strong>' + encodeURI(file.name) + '</strong>'
+                );
+
+                // var fileType = file.type;
+                // console.log(fileType);
+                var imageName = file.name;
+
+                var isGood = (/\.(?=gif|jpg|png|jpeg)/gi).test(imageName);
+                if (isGood) {
+                    document.getElementById('start').classList.add("hidden");
+                    document.getElementById('response').classList.remove("hidden");
+                    document.getElementById('notimage').classList.add("hidden");
+                    // Thumbnail Preview
+                    document.getElementById('file-image').classList.remove("hidden");
+                    document.getElementById('file-image').src = URL.createObjectURL(file);
+                }
+                else {
+                    document.getElementById('file-image').classList.add("hidden");
+                    document.getElementById('notimage').classList.remove("hidden");
+                    document.getElementById('start').classList.remove("hidden");
+                    document.getElementById('response').classList.add("hidden");
+                    document.getElementById("file-upload-form").reset();
+                }
+            }
+
+            function setProgressMaxValue(e) {
+                var pBar = document.getElementById('file-progress');
+
+                if (e.lengthComputable) {
+                    pBar.max = e.total;
+                }
+            }
+
+            function updateFileProgress(e) {
+                var pBar = document.getElementById('file-progress');
+
+                if (e.lengthComputable) {
+                    pBar.value = e.loaded;
+                }
+            }
+
+            function uploadFile(file) {
+
+                var xhr = new XMLHttpRequest(),
+                    fileInput = document.getElementById('class-roster-file'),
+                    pBar = document.getElementById('file-progress'),
+                    fileSizeLimit = 1024; // In MB
+                if (xhr.upload) {
+                    // Check if file is less than x MB
+                    if (file.size <= fileSizeLimit * 1024 * 1024) {
+                        // Progress bar
+                        pBar.style.display = 'inline';
+                        xhr.upload.addEventListener('loadstart', setProgressMaxValue, false);
+                        xhr.upload.addEventListener('progress', updateFileProgress, false);
+
+                        // File received / failed
+                        xhr.onreadystatechange = function (e) {
+                            if (xhr.readyState == 4) {
+                                // Everything is good!
+
+                                // progress.className = (xhr.status == 200 ? "success" : "failure");
+                                // document.location.reload(true);
+                            }
+                        };
+
+                        // Start upload
+                        xhr.open('POST', document.getElementById('file-upload-form').action, true);
+                        xhr.setRequestHeader('X-File-Name', file.name);
+                        xhr.setRequestHeader('X-File-Size', file.size);
+                        xhr.setRequestHeader('Content-Type', 'multipart/form-data');
+                        xhr.send(file);
+                    } else {
+                        output('Please upload a smaller file (< ' + fileSizeLimit + ' MB).');
+                    }
+                }
+            }
+
+            // Check for the various File API support.
+            if (window.File && window.FileList && window.FileReader) {
+                Init();
+            } else {
+                document.getElementById('file-drag').style.display = 'none';
+            }
+        }
+        ekUpload();
+    </script>
+
+</body>
+
+</html>

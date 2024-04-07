@@ -1,0 +1,1 @@
+// alert ("This is my HamBruag website make be peakk if you want you can contact me on footer or facebook");

@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* background color light */
+
+body {
+    background-color: #f1f1f1;
+}
+
+@font-face {
+    font-family: HelveticaRoman;
+    src: url(../HelveticaNeue-Roman.otf);
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url(../HelveticaNeue-Medium.otf);
+}
+
+body,
+html {
+    font-family: Helvetica;
+}
+
+:root {
+    --text-color: #000;
+    --border-color: #1c1c1c;
+    --links-color: #111;
+    --color-webb: #EBDDAE;
+}
+
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar {
+    padding: 0 35px 0;
+    height: 57px;
+    border-radius: 8px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    align-items: center;
+    background: #121212;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar-links ul {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-text h1 {
+    color: var(--color-webb);
+}
+
+.navbar-links ul li a {
+    color: var(--color-webb);
+    font-size: 16px;
+    background-color: var(--color-webb);
+    padding: 0.35rem 1.7rem;
+    border-radius: 6px;
+    color: #000;
+}
+
+.navbar-btn li a {
+    border-radius: 50px;
+    border: #EBDDAE solid 2px;
+    color: #fff;
+    padding: 0.45rem 1rem;
+}
+
+.navbar-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-content {
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.contact {
+    padding-top: 9rem;
+}
+
+.contact-content h1 {
+    font-size: 42px;
+    margin-bottom: 1rem;
+    background-color: var(--color-webb);
+    color: #000;
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    border-radius: 6px;
+}
+
+hr {
+    border: solid 2px;
+    margin-bottom: 1rem;
+    width: 320px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #fff;
+        --border-color: #242424;
+        --links-color: #ddd;
+        --color-webb: #EBDDAE;
+    }
+
+    body {
+        color: #eee;
+        background: #000000;
+    }
+
+    body a {
+        color: #809fff;
+    }
+
+    .navbar {
+        background: rgba(0, 0, 0, 0.767);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+    }
+
+    nav {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+    
+    .contact-content h2 {
+        color: var(--color-webb);  
+    }
+
+    hr {
+        border: solid 2px var(--color-webb);
+    }
+}

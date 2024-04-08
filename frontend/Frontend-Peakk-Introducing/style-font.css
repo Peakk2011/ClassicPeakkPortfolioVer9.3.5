@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Mothra;
+    src: url(Font/MOTHRA\ DEMO.ttf);
+}
+
+@font-face {
+    font-family: Realce;
+    src: url(Font/realce-black-v0006.otf);
+}
+
+@font-face {
+    font-family: Monospace-Rg;
+    src: url(Font/ltsuperiormono-regular.otf);
+}
+
+@font-face {
+    font-family: Monospace-Bd;
+    src: url(Font/ltsuperiormono-bold.otf);
+}
+
+@font-face {
+    font-family: Monospace-Sb;
+    src: url(Font/ltsuperiormono-semibold.otf);
+}
+
+@font-face {
+    font-family: Monospace-Md;
+    src: url(Font/ltsuperiormono-medium.otf);
+}
+
+@font-face {
+    font-family: January;
+    src: url(Font/January-BF660ead0477d1a.otf);
+}
+
+@font-face {
+    font-family: Happines;
+    src: url(Font/Happines-BF660ad806f05ce.otf);
+}
+
+@font-face {
+    font-family: Cinnamonbutter;
+    src: url(Font/CinnamonbutterDemoRegular-BF660cd659c03f6.ttf);
+}
+
+@font-face {
+    font-family: CaramelBurger;
+    src: url(Font/CaramelBurgerDemoRegular-BF660fa3c4dc99a.ttf);
+}
+
+/* sans font */
+
+@font-face {
+    font-family: Madimi;
+    src: url(important/madimi-font-1712479665-0/madimione-regular.otf);
+}
+
+@font-face {
+    font-family: protofo-bold;
+    src: url(important/protofo-font-family-1712480080-0/protofo-bold.otf);
+}
+
+@font-face {
+    font-family: protofo;
+    src: url(important/protofo-font-family-1712480080-0/protofo-regular.otf);
+}

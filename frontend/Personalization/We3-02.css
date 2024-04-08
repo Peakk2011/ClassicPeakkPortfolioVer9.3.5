@@ -3622,3 +3622,21 @@ white-space: nowrap;
   from {top: 85px; opacity: 1;}
   to {top: 60px; opacity: 0;}
 }
+
+.lang-conn {
+  display: flex;
+  gap: 20px;
+}
+
+body.dark .language a {
+  color: #fff;
+}
+.language a {
+  color: #000;
+  font-size: 32px;
+  font-family: Silkscreen;
+  margin-top: 1rem;
+  letter-spacing: -5px;
+  -webkit-text-stroke-width: 1px;
+  text-align: center;
+}

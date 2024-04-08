@@ -23,21 +23,19 @@ function myFunction() {
   btn.addEventListener("click", function () {
     document.body.classList.toggle("dark-theme");
   });
-  
-  const changeText = document.querySelector(".btn-toggle");
 
-  // js code to toggle dark and light mode
-modeToggle.addEventListener("click", () => {
-  modeToggle.classList.toggle("active");
-  body.classList.toggle("dark");
-  // js code to keep user selected mode even page refresh or file reopen
-  if (!body.classList.contains("dark")) {
-    localStorage.setItem("mode", "light-mode");
-  } else {
-    localStorage.setItem("mode", "dark-mode");
-  }
-});
-// js code to toggle search box
-searchToggle.addEventListener("click", () => {
-  searchToggle.classList.toggle("active");
-});
+  const Darkmode = document.querySelector(".Darkmode");
+
+  Darkmode.addEventListener("click", function () {
+    document.body.classList.toggle("dark-theme");
+  });
+  
+function openNav() {
+  document.getElementById("myNav").style.width = "280px";
+  document.querySelector(".control").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+  document.querySelector(".control").style.display = "none";
+};

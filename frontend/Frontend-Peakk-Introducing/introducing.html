@@ -14,12 +14,12 @@
 
 <body>
 
-    <nav>
+    <nav id="navbar">
         <div class="adjust-nav-width">
             <div class="navbar-content">
                 <div class="navbar-text">
                     <img src="../1711361629301.png" alt="">
-                    <h1>Portfolio Projects</h1>
+                    <h1>Project</h1>
                 </div>
                 <div class="navbar-links">
                     <li><a href="#">Chaninyut</a></li>
@@ -27,6 +27,7 @@
                     <li><a href="#">wiwat</a></li>
                     <li><a href="#">introducing</a></li>
                 </div>
+                <span id="Toggle-link" onclick="openNav()">&#9776;</span>
             </div>
             <div class="navbar-tray">
 
@@ -49,6 +50,56 @@
             </div>
         </div>
     </nav>
+
+    <div id="myNav" class="overlay">
+        <div class="close-btn">
+            <a id="Name" href="javascript:void(0)" class="closebtn" onclick="closeNav()">project<a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;<a>
+        </div>
+        <div class="overlay-content">
+            <a href="#">Chaninyut<ion-icon name="arrow-forward-outline"></ion-icon></a>
+            <a href="#">Peakk<ion-icon name="arrow-forward-outline"></ion-icon></a>
+            <a href="#">wiwat<ion-icon name="arrow-forward-outline"></ion-icon></a>
+            <a href="#">introducing<ion-icon name="arrow-forward-outline"></ion-icon></a>
+            <div class="Text-options">
+                <p>Theme</p>
+                <ion-icon name="arrow-down-outline"></ion-icon>
+            </div>
+            <button class="Darkmode">Swich Theme</button>
+            <div class="Text-options">
+                <p>Web theme</p>
+                <ion-icon name="arrow-down-outline"></ion-icon>
+            </div>
+            <div class="Theme-Selecter">
+                <a href="#">Pixel Theme</a>
+                <a href="#">Cyberpunk Theme</a>
+                <a href="#">Retro theme</a>
+            </div>
+            <div class="Text-options">
+                <p>Language</p>
+                <ion-icon name="arrow-down-outline"></ion-icon>
+            </div>
+            <div class="language-selecter">
+                <a href="#">Thai<ion-icon name="arrow-forward-outline"></ion-icon></a>
+                <a href="#">English<ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="control"></div>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-55px";
+            }
+            prevScrollpos = currentScrollPos;
+        };
+    </script>
 
     <!-- start introduc srction -->
 
@@ -101,13 +152,14 @@
                         <h1>3D Cube flip Effect</h1>
                     </div>
                     <div class="card-image">
-                        <img src="./Cubic Hover cuve.png"
-                            alt="">
+                        <img src="./Cubic Hover cuve.png" alt="">
                     </div>
                     <div class="card-text">
                         <h1>3D Cube Flip Effect</h1>
                         <hr>
-                        <p>3D Cube Flip Effect is a game make by peakk with html css only if you want to play it you see on bottom side they call Visit this project and you click it to begin and play this game.</p>
+                        <p>3D Cube Flip Effect is a game make by peakk with html css only if you want to play it you see
+                            on bottom side they call Visit this project and you click it to begin and play this game.
+                        </p>
                         <a href="../Reveal Peakk Project 1.8 update/Animation project/index.html">Visit this project</a>
                     </div>
                 </div>
@@ -119,13 +171,13 @@
                         <h1>Personal Website</h1>
                     </div>
                     <div class="card-image">
-                        <img src="./Persinal.png"
-                            alt="">
+                        <img src="./Persinal.png" alt="">
                     </div>
                     <div class="card-text">
                         <h1>Personal Website</h1>
                         <hr>
-                        <p>A Cyberpunk Personal Website  Design, Make by Peakk That have only dark mode if you want this website you can Visit this project by click a button bellow call Visit this project.</p>
+                        <p>A Cyberpunk Personal Website Design, Make by Peakk That have only dark mode if you want this
+                            website you can Visit this project by click a button bellow call Visit this project.</p>
                         <a href="../Reveal Peakk Project 1.8 update/CodePaste/index.html">Visit this project</a>
                     </div>
                 </div>
@@ -137,13 +189,13 @@
                         <h1>Library Website</h1>
                     </div>
                     <div class="card-image">
-                        <img src="BookWebsite.png"
-                            alt="">
+                        <img src="BookWebsite.png" alt="">
                     </div>
                     <div class="card-text">
                         <h1>Library Website</h1>
                         <hr>
-                        <p>This is a library Website make by peakk this website is have dark mode and light mode on windows chenge if you want this website it visit it you can click a button below this.</p>
+                        <p>This is a library Website make by peakk this website is have dark mode and light mode on
+                            windows chenge if you want this website it visit it you can click a button below this.</p>
                         <a href="../Reveal Peakk Project 1.8 update/Book Website/index.html">Visit this project</a>
                     </div>
                 </div>
@@ -155,13 +207,13 @@
                         <h1>FastFood Website</h1>
                     </div>
                     <div class="card-image">
-                        <img src="HamburgetWebb.png"
-                            alt="">
+                        <img src="HamburgetWebb.png" alt="">
                     </div>
                     <div class="card-text">
                         <h1>FastFood Website</h1>
                         <hr>
-                        <p>FastFood Website or Hamburger website is a food website make by me a hamburger website thay have Light mode & Dark mode same as library website if you chenge a windows theme.</p>
+                        <p>FastFood Website or Hamburger website is a food website make by me a hamburger website thay
+                            have Light mode & Dark mode same as library website if you chenge a windows theme.</p>
                         <a href="../Reveal Peakk Project 1.8 update/Hamburger Website/index.html">Visit this project</a>
                     </div>
                 </div>
@@ -173,13 +225,14 @@
                         <h1>Simple Website Design</h1>
                     </div>
                     <div class="card-image">
-                        <img src="Simpleed.png"
-                            alt="">
+                        <img src="Simpleed.png" alt="">
                     </div>
                     <div class="card-text">
                         <h1>Simple Web Design</h1>
                         <hr>
-                        <p>Simple Website Design is make by Peakk for a beginner to pactive a layout of website a language to make a website is only Html and CSS only if you want to see this project click a button here.</p>
+                        <p>Simple Website Design is make by Peakk for a beginner to pactive a layout of website a
+                            language to make a website is only Html and CSS only if you want to see this project click a
+                            button here.</p>
                         <a href="../Reveal Peakk Project 1.8 update/Simple layout website/index.html
                         ">Visit this project</a>
                     </div>
@@ -188,11 +241,12 @@
 
         </div>
     </div>
-    
+
     <div class="text-suggess">
         <h1>Developer Tools</h1>
         <hr>
-        <p class="Suggess-Expaination">A Developer Tools Make by Peakk they have some tool of a website developer beginner on this section they have a requirement that all website need to have.</p>
+        <p class="Suggess-Expaination">A Developer Tools Make by Peakk they have some tool of a website developer
+            beginner on this section they have a requirement that all website need to have.</p>
     </div>
 
     <script>
@@ -201,7 +255,7 @@
             loop: true,
             // autoplay:true,
             // autoplayTimeout:3000,
-            autoplayHoverPause:true,
+            autoplayHoverPause: true,
         });
     </script>
 

@@ -3800,6 +3800,79 @@ body.dark .alert-choice {
   .intro--banner button {
     box-shadow: none;
   }
+  .intro--banner strong {
+    animation: none;
+    background-color: #F5D672;
+    background: linear-gradient(225deg, #F5D672, #F5D672);
+    box-shadow: none;
+  }
+  .intro--banner h1 {
+    text-shadow: none;
+    box-shadow: none;
+    animation: none;
+  }
+  body.dark .intro--banner h1 {
+    text-shadow: none;
+  }
+  body.dark .about--banner h2 {
+    text-shadow: none;
+  }
+  .about--banner h2 {
+    text-shadow: none;
+  }
+  body.dark .about--banner span {
+    box-shadow: none;
+  }
+  .about--banner span {
+    box-shadow: none;
+    background: linear-gradient(225deg, #F5D672, #F5D672);
+    text-shadow: none;
+  }
+  body.dark .glitch {
+    background: linear-gradient(225deg, #F5D672, #F5D672);
+    box-shadow: none;
+  }
+  .glitch {
+    background: linear-gradient(225deg, #F5D672, #F5D672);
+    box-shadow: none;
+    animation: none;
+  }
+  body.dark .about--banner i {
+    text-shadow: none;
+  }
+  about--banner i {
+    text-shadow: none;
+  }
+  .background i {
+    text-shadow: none;
+  }
+  body.dark .background i {
+    text-shadow: none;
+  }
+  body.dark .comment-text h1 {
+    text-shadow: none;
+  }
+  .comment-text h1 {
+    text-shadow: none;
+  }
+  .comment-text span {
+    text-shadow: none;
+    box-shadow: none;
+    background: linear-gradient(225deg, #F5D672, #F5D672);
+  }
+  body.dark .comment-text h2 {
+    text-shadow: none;
+    box-shadow: none;
+  }
+  .comment-text h2 {
+    text-shadow: none;
+    box-shadow: none;
+  }
+  .comment-text li a {
+    text-shadow: none;
+    box-shadow: none;
+    background: linear-gradient(225deg, #F5D672, #F5D672);
+  }
 }
 
 /* Responsive fixed from thai language update 2 aprill 24 */

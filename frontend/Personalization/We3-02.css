@@ -3536,6 +3536,79 @@ body {
   .intro--banner button {
     box-shadow: none;
   }
+  .intro--banner strong {
+    animation: none;
+    background-color: #bbd8d4;
+    background: linear-gradient(225deg, #bbd8d4, #bbd8d4);
+    box-shadow: none;
+  }
+  .intro--banner h1 {
+    text-shadow: none;
+    box-shadow: none;
+    animation: none;
+  }
+  body.dark .intro--banner h1 {
+    text-shadow: none;
+  }
+  body.dark .about--banner h2 {
+    text-shadow: none;
+  }
+  .about--banner h2 {
+    text-shadow: none;
+  }
+  body.dark .about--banner span {
+    box-shadow: none;
+  }
+  .about--banner span {
+    box-shadow: none;
+    background: linear-gradient(225deg, #bbd8d4, #bbd8d4);
+    text-shadow: none;
+  }
+  body.dark .glitch {
+    background: linear-gradient(225deg, #bbd8d4, #bbd8d4);
+    box-shadow: none;
+  }
+  .glitch {
+    background: linear-gradient(225deg, #bbd8d4, #bbd8d4);
+    box-shadow: none;
+    animation: none;
+  }
+  body.dark .about--banner i {
+    text-shadow: none;
+  }
+  about--banner i {
+    text-shadow: none;
+  }
+  .background i {
+    text-shadow: none;
+  }
+  body.dark .background i {
+    text-shadow: none;
+  }
+  body.dark .comment-text h1 {
+    text-shadow: none;
+  }
+  .comment-text h1 {
+    text-shadow: none;
+  }
+  .comment-text span {
+    text-shadow: none;
+    box-shadow: none;
+    background: linear-gradient(225deg, #bbd8d4, #bbd8d4);
+  }
+  body.dark .comment-text h2 {
+    text-shadow: none;
+    box-shadow: none;
+  }
+  .comment-text h2 {
+    text-shadow: none;
+    box-shadow: none;
+  }
+  .comment-text li a {
+    text-shadow: none;
+    box-shadow: none;
+    background: linear-gradient(225deg, #bbd8d4, #bbd8d4);
+  }
 }
 
 

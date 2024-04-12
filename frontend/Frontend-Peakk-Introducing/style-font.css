@@ -64,3 +64,18 @@
     font-family: protofo;
     src: url(important/protofo-font-family-1712480080-0/protofo-regular.otf);
 }
+
+@font-face {
+    font-family: Helvetica;
+    src: url(Font/HelveticaNeue-Medium.otf);
+}
+
+@font-face {
+    font-family: Helvetica-bold;
+    src: url(Font/HelveticaNeueBold.ttf);
+}
+
+@font-face {
+    font-family: SegoeUi-Varible;
+    src: url(Font/SegoeUIVF.ttf);
+}

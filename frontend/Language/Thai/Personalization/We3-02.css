@@ -340,9 +340,13 @@ nav .nav-bar .logo a {
   margin-left: 0.5rem;
   font-family: Silkscreen;
   transition: cubic-bezier(0.165, 0.84, 0.44, 1) all 0.5s;
-  /* background-color: #0f0f0f;
-  color: #fff;
-  padding:0px 0.8rem 0rem 0.5rem; */
+  margin-left: 1rem;
+  display: block;
+  border-bottom: solid 2px #000;
+}
+
+body.dark nav .nav-bar .logo a {
+  border-bottom: solid 2px #FFF;
 }
 
 .text-navbar {
@@ -355,13 +359,21 @@ nav .nav-bar .logo a {
 }
 
 .navImg {
-  background-color: #0f0f0f;
+  background: url(../../../Peakk-Logo/DarkMode.png);
+  background-position: center;
+  background-size: cover;
   width: 30px;
   height: 30px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  border-radius: 20px;
+  border-radius: 5px;
+}
+
+body.dark .navImg {
+  background: url(../../../Peakk-Logo/LightMode.png);
+  background-position: center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
 }
 
 .menu .logo-toggle {
@@ -2903,13 +2915,17 @@ body.dark .card .content p {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(33, 54, 58, 0.66);
+  backdrop-filter: blur(20px);
+  box-shadow: rgba(33, 54, 58, 0.465) 5px 5px 2px 1px;
   animation: animate 15s linear infinite;
   bottom: -150px;
+  background: rgba(33, 54, 58, 0.761);
 }
 
 body.dark .circles li {
-    background: rgba(33, 54, 58, 0.66);
+  background: rgba(187, 216, 212, 0.27);
+  backdrop-filter: blur(20px);
+  box-shadow: rgba(187, 216, 212, 0.179) 5px 5px 2px 1px;
 }
 
 .circles li:nth-child(1) {

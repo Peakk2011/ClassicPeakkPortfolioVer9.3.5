@@ -1,0 +1,77 @@
+/* Adjust to sans serif font to defauit */
+
+.intro--banner h1 {
+    letter-spacing: 0px;
+    font-family: 'General Sans', sans-serif;
+    font-weight: 700;
+}
+
+#Selecter {
+    font-family: Madimi;
+    letter-spacing: 0px;
+}
+
+#Selecter a {
+    font-family: Madimi;
+    text-align: center;
+}
+
+nav .nav-bar .logo a {
+    font-family: Madimi;
+    letter-spacing: 0px;
+}
+
+.nav-links .navhover a {
+    font-family: SegoeUi-Varible;
+    font-weight: 400;
+}   
+
+.intro--banner strong {
+    font-family: SegoeUi-Varible;
+    font-weight: 600;
+}
+
+.intro--banner button {
+    font-family: 'General Sans', sans-serif;
+}
+
+.intro--options h3 {
+    font-weight: 600;
+    font-family: 'Switzer', sans-serif;
+}
+
+.intro--options p {
+    font-family: Helvetica;
+}
+
+.about--banner h2 {
+    font-family: 'General Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+.about--banner span {
+    font-family: Helvetica;
+    font-weight: 600;
+    height: 3.2rem;
+    padding-top: 0.2rem;
+}
+
+.glitch {
+    font-family: Helvetica;
+    font-weight: 600;
+}
+
+.comment-text h1 {
+    letter-spacing: 0px;
+    font-family: 'Switzer', sans-serif;
+}
+
+.comment-text h2 {
+    font-family: 'Switzer', sans-serif;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* font-family: 'Switzer', sans-serif; */

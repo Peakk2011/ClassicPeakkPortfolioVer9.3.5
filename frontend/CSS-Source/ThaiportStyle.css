@@ -14,6 +14,7 @@ nav .nav-bar .logo a {
     font-size: 28px;
     display: block;
     transform: translateY(4px);
+    line-height: 0.9;
 }
 
 .text-navbar i {
@@ -291,6 +292,16 @@ nav .nav-bar .logo a {
 @media (max-width: 320px) {
     .menu {
         width: 320px;
+    }
+}
+
+@media (max-width: 520px) {
+    body nav .nav-bar .logo a {
+        font-size: 24px;
+    }
+    .alert-choice a {
+        font-size: 19px;
+        border: none;
     }
 }
 

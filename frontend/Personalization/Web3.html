@@ -123,11 +123,11 @@
         };
     </script>
 
-    <nav>
+    <nav id="HideWhenClic">
         <div class="nav-bar">
             <i class='bx bx-menu sidebarOpen'></i>
             <!-- image -->
-            <div class="text-navbar">
+            <div class="text-navbar" onclick="ClickText()">
                 <div class="navImg"></div>
                 <!-- <div class="navImg"><img src="./Logo/Solid.jpg" alt=""></div> -->
                 <!-- <i class='bx bx-home'></i> -->
@@ -170,6 +170,9 @@
                                 class='bx bx-globe'></i>
                             <p>Thai</p>
                         </a></li>
+                        <h1 class="Mtxt">Fullscreen</h1>
+                        <li class="MoblieShow"><a href="#" onclick="OpenFullScre()"><i class='bx bx-fullscreen'></i>
+                                <p>Fullscreen</p></a></li>
                 </ul>
             </div>
             <div class="darkLight-searchBox">
@@ -243,6 +246,7 @@
                                 </div>
                                 <div class="Exit-ToHome">
                                     <button onclick="Off2()">Exit to lobby?</button>
+                                    <button id="myBtn" onclick="OpenFullScre()">Fullscreen?</button>
                                 </div>
                             </div>
 
@@ -513,6 +517,172 @@
         </div>
     </footer>
 
+    <!-- update 1.9 -->
+
+        <!-- Hover Text -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Fullscreen</h2>
+            </div>
+            <div class="modal-body">
+                <p>Hello, i'm peakk first let my website to full screen.</p>
+                <button onclick="openFullscreen();">Open Fullscreen</button>
+                <button onclick="closeFullscreen();">Close Fullscreen</button>
+            </div>
+            <div class="modal-footer">
+                <h3>Peakk Portfolio © 2024, ALL Rights Reserved</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        function OpenFullScre() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        // Acc
+        $(document).on("click", ".naccs .menu div", function () {
+            var numberIndex = $(this).index();
+
+            if (!$(this).is("active")) {
+                $(".naccs .menu div").removeClass("active");
+                $(".naccs ul li").removeClass("active");
+
+                $(this).addClass("active");
+                $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+                var listItemHeight = $(".naccs ul")
+                    .find("li:eq(" + numberIndex + ")")
+                    .innerHeight();
+                $(".naccs ul").height(listItemHeight + "px");
+            }
+        });
+
+    </script>
+
+    <!-- another alert messeage on text navbar -->
+
+    <!-- The Modal -->
+    <div id="Navbar-text-messeage" class="textwhenClick">
+
+        <div class="text-alert-navbar">
+            <div class="text-navbar-content">
+                <div class="navbat-text-content-logo">
+                    <div class="dupicate-navbar-logo">
+                        <!-- logo here -->
+                        <!-- image -->
+                        <div class="content-alert-logo"></div>
+                        <h1>PORTFOLIO</h1>
+                    </div>
+                    <!-- exit button -->
+                    <span onclick="ExitText()">&times;</span>
+                </div>
+                <div class="Navbar-text-alert" id="ElementHide5second">
+                    <i class='bx bx-info-circle'></i>
+                    <h1>This is peakk portfolio welcome to see this page and you will know i going to say something on
+                        this page.</h1>
+                </div>
+
+                <div class="navbar-text-icons-introduce">
+                    <div class="text-ico-intro-con">
+
+                        <div class="text-alert-intro-conn-image"></div>
+
+                        <div class="Txt-alert-intro">
+                            <h1><p>introducing</p> <strong>Peakk</strong></h1>
+                            <hr>
+                            <h2>Hello, i'm peakk i'm from <b>Thailand</b><br>This is my portfolio make by me and i have a designer make a logo of my porfoilio and he adjust a layout of my website for sometime that i didn't think and we introduc <strong>Jiratha</strong></h2>
+                            <!-- button -->
+                            <li><a href="Frontend-Peakk-Introducing/introducing.html">View my project</a></li>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="navbar-text-icons-introduce">
+                    <div class="text-ico-intro-con">
+
+                        <div class="Txt-alert-intro">
+                            <h1><p>Introducing</p> <strong>Jiratha</strong><h1>
+                            <hr>
+                            <h2 id="Mew-width-text"><strong>Hello and welcome</strong> to peakk portfolio my name is <strong>Jiratha</strong>and i'm <strong>designer & Administer</strong> and peakk invite me to work together because i'm interested peakk he mysterious and <strong>he deal me 25% for 1 website if successed to sell it</strong></h2>
+                            <!-- button -->
+                            <!-- <li><a href="Frontend-Peakk-Introducing/introducing.html">View my project</a></li> -->
+                        </div>
+
+                        <div class="text-alert-intro-conn-image" id="Mewimage"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var textwhenClick = document.getElementById("Navbar-text-messeage");
+        var HideNavbar = document.getElementById("HideWhenClic");
+        var ShowForLittle = document.getElementById("ElementHide5second");
+
+        function ClickText() {
+            textwhenClick.style.display = "block";
+            HideNavbar.style.display = "none";
+            
+            setTimeout(() => {
+                ShowForLittle.style.opacity = "0";
+            }, 5000);
+        }
+
+        function ExitText() {
+            document.getElementById("Navbar-text-messeage").style.display = "none";
+            HideNavbar.style.display = "block";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == textwhenClick) {
+                document.getElementById("Navbar-text-messeage").style.display = "none";
+                HideNavbar.style.display = "block";
+            }
+        };
+    </script>
 
 
     <script>

@@ -3595,6 +3595,7 @@ body.dark .callout-header {
   z-index: 2;
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.8s;
   animation: FadeIN 0.3s ease-out;
+  overflow-y: scroll;
 }
 
 @keyframes FadeIN {
@@ -4548,7 +4549,7 @@ body.dark #toast #desc {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: scroll; /* Enable scroll if needed */
+  overflow-y: scroll; /* Enable scroll if needed */
   background-color: rgb(255, 255, 255); /* Fallback color */
   backdrop-filter: blur(20px);
   animation: fadeMa 0.2s linear;

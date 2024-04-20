@@ -115,11 +115,11 @@
         };
     </script>
 
-    <nav>
+    <nav id="HideWhenClic">
         <div class="nav-bar">
             <i class='bx bx-menu sidebarOpen'></i>
             <!-- image -->
-            <div class="text-navbar">
+            <div class="text-navbar" onclick="ClickText()">
                 <div class="navImg"></div>
                 <span class="logo navLogo"><a href="#">ผลงานของพีค</a></span>
             </div>
@@ -141,6 +141,9 @@
                     <h1 class="Mtxt">ภาษาและภูมิภาค</h1>
                     <li class="MoblieShow"><a href="../../../index.html"><i class='bx bx-globe' ></i><p>ภาษาอังกฤษ</p></a></li>
                     <li class="MoblieShow"><a href="#"><i class='bx bx-globe' ></i><p>ภาษาไทย</p></a></li>       
+                    <h1 class="Mtxt">การมองเห็น</h1>
+                    <li class="MoblieShow"><a href="#" onclick="OpenFullScre()"><i class='bx bx-fullscreen'></i>
+                            <p>เต็มหน้าจอ</p></a></li>
                 </ul>
             </div>
             <div class="darkLight-searchBox">
@@ -212,6 +215,7 @@
                                 </div>
                                 <div class="Exit-ToHome">
                                     <button onclick="Off2()">กลับไปหน้าแรก</button>
+                                    <button id="myBtn" onclick="OpenFullScre()">เปิดเว็บแบบเต็มจอ?</button>
                                 </div>
                             </div>
 
@@ -481,7 +485,172 @@
         </div>
     </footer>
 
+    <!-- update 1.9 -->
 
+            <!-- Hover Text -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>การมองเห็น</h2>
+            </div>
+            <div class="modal-body">
+                <p>สวัสดีให้เว็บไซต์ของแสดงแบบเต็มหน้าจอก่อน</p>
+                <button onclick="openFullscreen();">เปิดเว็บเต็มจอ</button>
+                <button onclick="closeFullscreen();">กลับมาหน้าเดิม</button>
+            </div>
+            <div class="modal-footer">
+                <h3>Peakk Portfolio © 2024, ALL Rights Reserved</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        function OpenFullScre() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        // Acc
+        $(document).on("click", ".naccs .menu div", function () {
+            var numberIndex = $(this).index();
+
+            if (!$(this).is("active")) {
+                $(".naccs .menu div").removeClass("active");
+                $(".naccs ul li").removeClass("active");
+
+                $(this).addClass("active");
+                $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+                var listItemHeight = $(".naccs ul")
+                    .find("li:eq(" + numberIndex + ")")
+                    .innerHeight();
+                $(".naccs ul").height(listItemHeight + "px");
+            }
+        });
+
+    </script>
+
+    <!-- another alert messeage on text navbar -->
+
+    <!-- The Modal -->
+    <div id="Navbar-text-messeage" class="textwhenClick">
+
+        <div class="text-alert-navbar">
+            <div class="text-navbar-content">
+                <div class="navbat-text-content-logo">
+                    <div class="dupicate-navbar-logo">
+                        <!-- logo here -->
+                        <!-- image -->
+                        <div class="content-alert-logo"></div>
+                        <h1>ผลงานของพีค</h1>
+                    </div>
+                    <!-- exit button -->
+                    <span onclick="ExitText()">&times;</span>
+                </div>
+                <div class="Navbar-text-alert" id="ElementHide5second">
+                    <i class='bx bx-info-circle'></i>
+                    <h1>This is peakk portfolio welcome to see this page and you will know i going to say something on
+                        this page.</h1>
+                </div>
+
+                <div class="navbar-text-icons-introduce">
+                    <div class="text-ico-intro-con">
+
+                        <div class="text-alert-intro-conn-image"></div>
+
+                        <div class="Txt-alert-intro">
+                            <h1><p>สวัสดัครับ,ผม</p> <strong>พีคเองนะ</strong></h1>
+                            <hr>
+                            <h2>สวัสดัค้าบบยินดีต้อนรับนะครับผมมาจาก <b>ประเทศไทยครับ</b><br>นี้คือเว็บผลงานของผมสร้างมาจากผมและผมมีคนออกแบบคนนึงครับเขาเป็นคนออกแบบเว็บของผมนะครับผลงานของเขาที่ทํากับเว็บผมนั้นเขาทําโลโก่ของเว็บผมครับและปรับโครงสร้างของเว็บนี้นะครับและคนที่ผมบอกดังกล่าวเขาชื่อ<strong>จิรฐา</strong></h2>
+                            <!-- button -->
+                            <li><a href="Frontend-Peakk-Introducing/introducing.html">ดูโปรเจคของผม</a></li>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="navbar-text-icons-introduce">
+                    <div class="text-ico-intro-con">
+
+                        <div class="Txt-alert-intro">
+                            <h1><p>ขอนําเสนอ</p><strong>จิรฐา</strong><h1>
+                            <hr>
+                            <h2 id="Mew-width-text"><strong>สวัสดีครับแล้วยินดีต้อนรับ</strong>เข้าสู่เว็บไซต์ของพีคผมชื่อ<strong>จิรฐาชื่อเล่นชื่อมิว</strong>และผมเป็น<strong>นักออกแบบ & ผู้จัดการ</strong> และพีคเขาโทรมาปรึกษาและพีคก็ได้คําปรึกษาที่ดีจึงชักชวนผมให้มาช่วยทําเว็บของพีคและมีข่อเสนอว่า <strong>เมื่อเราทําเว็บไซค์นึงแล้วได้กําไรเราจะแบ่งให้นาย 25%</strong></h2>
+                            <!-- button -->
+                            <!-- <li><a href="Frontend-Peakk-Introducing/introducing.html">View my project</a></li> -->
+                        </div>
+
+                        <div class="text-alert-intro-conn-image" id="Mewimage"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var textwhenClick = document.getElementById("Navbar-text-messeage");
+        var HideNavbar = document.getElementById("HideWhenClic");
+        var ShowForLittle = document.getElementById("ElementHide5second");
+
+        function ClickText() {
+            textwhenClick.style.display = "block";
+            HideNavbar.style.display = "none";
+            
+            setTimeout(() => {
+                ShowForLittle.style.opacity = "0";
+            }, 5000);
+        }
+
+        function ExitText() {
+            document.getElementById("Navbar-text-messeage").style.display = "none";
+            HideNavbar.style.display = "block";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == textwhenClick) {
+                document.getElementById("Navbar-text-messeage").style.display = "none";
+                HideNavbar.style.display = "block";
+            }
+        };
+    </script>
 
     <script>
         AOS.init();

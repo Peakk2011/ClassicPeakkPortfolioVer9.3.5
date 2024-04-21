@@ -214,6 +214,28 @@ nav .nav-bar .logo a {
     line-height: 1.4;
 }
 
+.menu span {
+    font-family: MiSans-th-Normal;
+}
+
+.text-setting-nccess h1 {
+    font-family: Arabica;
+}
+
+.Theme-Selecter a {
+    font-family: Arabica;
+    letter-spacing: 0px;
+}
+
+.option-linkclick div {
+    font-family: MiSans-th-Normal;
+}
+
+.language a {
+    letter-spacing: 0px;
+    font-family: Arabica;
+}
+
 @media screen and (max-width: 500px) {
     .intro--banner strong {
         font-family: FC-icons;

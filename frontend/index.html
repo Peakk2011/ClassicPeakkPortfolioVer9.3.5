@@ -195,7 +195,8 @@
                         </a></li>
                     <h1 class="Mtxt">FullScreen</h1>
                     <li class="MoblieShow"><a href="#" onclick="OpenFullScre()"><i class='bx bx-fullscreen'></i>
-                            <p>FullScreen</p></a></li>
+                            <p>FullScreen</p>
+                        </a></li>
                 </ul>
             </div>
             <div class="darkLight-searchBox">
@@ -247,15 +248,28 @@
         <div class="naccs">
             <div class="grid">
                 <div class="gc gc--1-of-3">
-                    <div class="menu">
-                        <div class="active"><span class="light"></span><span><i class='bx bx-home'></i>Home</span></div>
-                        <div><span class="light"></span><span><i class='bx bx-globe'></i>Language</span></div>
-                        <div><span class="light"></span><span><i class='bx bx-brush'></i>Personalization</span></div>
+                    <div class="text-setting-nccess">
+                        <h1><i class='bx bxs-cog'></i>Settings</h1>
                     </div>
+                    <div class="menu" id="Links-clickSettings">
+                        <div class="active"><span class="light"></span><span><i class='bx bx-home'></i>All
+                                Settings</span></div>
+                    </div>
+
+                    <div class="option-linkclick">    
+                        <div><a href="Personalization/Web3.html"><span><i class='bx bx-link-external' ></i>Cyberpunk</span></a></div>
+                        <div><a href="Pixeled.html"><span><i class='bx bx-link-external' ></i>Pixeled</span></a></div>
+                        <div><a href="Language/Thai/Thai.html"><span><i class='bx bx-globe'></i>Thai</span></a></div>
+                        <div><a href="#"><span><i class='bx bx-globe'></i>English</span></a></div>
+                        <div><span  onclick="OpenFullScre()"><i class='bx bx-fullscreen' ></i>Fullscreen</span></div>
+                        <div><span onclick="Off2()"><i class='bx bx-exit' ></i>Exit to lobby</span></div>
+                    </div>
+
                 </div>
                 <div class="gc gc--2-of-3">
                     <ul class="nacc">
                         <li class="active">
+                            <div class="inside">
 
                             <div class="Welcome-More">
                                 <p class="Sett-introduc">This is<span>Peakk Portfolio<i class='bx bxs-cog'></i></span>
@@ -271,15 +285,13 @@
                                 </div>
                             </div>
 
-                        </li>
-                        <li>
                             <div class="lang-sys">
                                 <h1>Select Your language</h1>
 
                                 <div class="language">
                                     <div class="lang-conn">
                                         <div class="lang-seclecter">
-                                            <a href="#">English</a>
+                                            <a onclick="Off2()">English</a>
                                         </div>
                                         <div class="lang-seclecter">
                                             <a href="Language/Thai/Thai.html">Thai</a>
@@ -288,9 +300,11 @@
                                 </div>
 
                             </div>
-                        </li>
-                        <li>
-                            <!-- dark mode pericnalization -->
+
+                        </div>
+                        <div class="inside-app">
+
+                            <!-- dark mode Personalization -->
                             <div class="Theme-Sys">
                                 <h1>Select your theme</h1>
 
@@ -305,25 +319,28 @@
                                         </div>
                                     </div>
 
-                                    <div class="Page-theme-font-selecter">
+                                </div>
+                            </div>
 
-                                        <div class="Pagetheme">
-                                            <h1>Select your best font</h1>
-                                            <p>Its work only main page but english language only on theme a font
-                                                automaticity chenge to make a theme beautiful. </p>
-                                        </div>
+                            <div class="Page-theme-font-selecter">
 
-                                        <div class="page-image">
-                                            <div class="Page-Selecter">
-                                                <a onclick="Off2()"><img src="Font-image/Sans-Serif.png" alt=""></a>
-                                            </div>
-                                            <div class="Page-Selecter">
-                                                <a href="Pixeled.html"><img src="Font-image/Monospace.png" alt=""></a>
-                                            </div>
-                                        </div>
+                                <div class="Pagetheme">
+                                    <h1>Select your best font</h1>
+                                    <p>Its work only main page but english language only on theme a font
+                                        automaticity chenge to make a theme beautiful. </p>
+                                </div>
+
+                                <div class="page-image">
+                                    <div class="Page-Selecter">
+                                        <a onclick="Off2()"><img src="Font-image/Sans-Serif.png" alt=""></a>
+                                    </div>
+                                    <div class="Page-Selecter">
+                                        <a href="Pixeled.html"><img src="Font-image/Monospace.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
+
+                        </div>
                         </li>
                     </ul>
                 </div>
@@ -437,9 +454,13 @@
                         <div class="text-alert-intro-conn-image"></div>
 
                         <div class="Txt-alert-intro">
-                            <h1><p>introducing</p> <strong>Peakk</strong></h1>
+                            <h1>
+                                <p>introducing</p> <strong>Peakk</strong>
+                            </h1>
                             <hr>
-                            <h2>Hello, i'm peakk i'm from <b>Thailand</b><br>This is my portfolio make by me and i have a designer make a logo of my porfoilio and he adjust a layout of my website for sometime that i didn't think and we introduc <strong>Jiratha</strong></h2>
+                            <h2>Hello, i'm peakk i'm from <b>Thailand</b><br>This is my portfolio make by me and i have
+                                a designer make a logo of my porfoilio and he adjust a layout of my website for sometime
+                                that i didn't think and we introduc <strong>Jiratha</strong></h2>
                             <!-- button -->
                             <li><a href="Frontend-Peakk-Introducing/introducing.html">View my project</a></li>
                         </div>
@@ -452,11 +473,16 @@
                     <div class="text-ico-intro-con">
 
                         <div class="Txt-alert-intro">
-                            <h1><p>Introducing</p> <strong>Jiratha</strong><h1>
-                            <hr>
-                            <h2 id="Mew-width-text"><strong>Hello and welcome</strong> to peakk portfolio my name is <strong>Jiratha</strong>and i'm <strong>designer & Administer</strong> and peakk invite me to work together because i'm interested peakk he mysterious and <strong>he deal me 25% for 1 website if successed to sell it</strong></h2>
-                            <!-- button -->
-                            <!-- <li><a href="Frontend-Peakk-Introducing/introducing.html">View my project</a></li> -->
+                            <h1>
+                                <p>Introducing</p> <strong>Jiratha</strong>
+                                <h1>
+                                    <hr>
+                                    <h2 id="Mew-width-text"><strong>Hello and welcome</strong> to peakk portfolio my
+                                        name is <strong>Jiratha</strong>and i'm <strong>designer & Administer</strong>
+                                        and peakk invite me to work together because i'm interested peakk he mysterious
+                                        and <strong>he deal me 25% for 1 website if successed to sell it</strong></h2>
+                                    <!-- button -->
+                                    <!-- <li><a href="Frontend-Peakk-Introducing/introducing.html">View my project</a></li> -->
                         </div>
 
                         <div class="text-alert-intro-conn-image" id="Mewimage"></div>
@@ -478,7 +504,7 @@
         function ClickText() {
             textwhenClick.style.display = "block";
             HideNavbar.style.display = "none";
-            
+
             setTimeout(() => {
                 ShowForLittle.style.opacity = "0";
             }, 5000);
@@ -686,6 +712,9 @@
 
 
     </div>
+
+    <!-- BACKGROUND MUSIC -->
+    <audio src="Background-Music/Simpsonwave1989.mp3" autoplay loop></audio>
 
     <footer class="footer">
         <div class="icons">

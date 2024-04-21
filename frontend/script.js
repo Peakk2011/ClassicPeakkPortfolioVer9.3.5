@@ -131,6 +131,7 @@ function off() {
 
 function ON2() {
   document.getElementById("overlay-moreOptions").style.display = "block";
+  document,getElementById("HideWhenClic").style.display = "none";
 }
 
 function Off2() {
@@ -167,5 +168,3 @@ window.addEventListener("click", () => {
 window.addEventListener("focus", () => {
   document.title = docTitle;
 });
-
-

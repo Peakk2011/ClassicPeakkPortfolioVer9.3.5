@@ -208,64 +208,80 @@
         <div class="naccs">
             <div class="grid">
                 <div class="gc gc--1-of-3">
-                    <div class="menu">
-                        <div class="active"><span class="light"></span><span>หน้าแรก</span></div>
-                        <div><span class="light"></span><span>ภาษา</span></div>
-                        <div><span class="light"></span><span>การปรับเปลี่ยนในแบบของคุณ</span></div>
+                    <div class="text-setting-nccess">
+                        <h1><i class='bx bxs-cog'></i>การตั้งค่า</h1>
                     </div>
+                    <div class="menu" id="Links-clickSettings">
+                        <div class="active"><span class="light"></span><span><i class='bx bx-home'></i>การตั้งค่าทั้งหมด</span></div>
+                    </div>
+
+                    <div class="option-linkclick">    
+                        <div><a href="Personalization/Web3.html"><span><i class='bx bx-link-external' ></i>ธีมโลกอนาคต</span></a></div>
+                        <div><a href="#"  onclick="Off2()"><span><i class='bx bx-link-external' ></i>ตั่งเดิม</span></a></div>
+                        <div><a href="#" onclick="Off2()"><span><i class='bx bx-globe'></i>ภาษาไทย</span></a></div>
+                        <div><a href="../../../index.html"><span><i class='bx bx-globe'></i>ภาษาอังกฤษ</span></a></div>
+                        <div><span  onclick="OpenFullScre()"><i class='bx bx-fullscreen' ></i>เต็มหน้าจอ</span></div>
+                        <div><span onclick="Off2()"><i class='bx bx-exit' ></i>ออกจากหน้านี้</span></div>
+                    </div>
+
                 </div>
                 <div class="gc gc--2-of-3">
                     <ul class="nacc">
                         <li class="active">
+                            <div class="inside">
 
                             <div class="Welcome-More">
-                                <p class="Sett-introduc">สวัสดีครับ,นี้คิอ<span>การตั้งค่า<i
-                                            class='bx bxs-cog'></i></span></p>
+                                <p class="Sett-introduc">สวัสดีครับ, นี้คือ<span>การตั้งค่า<i class='bx bxs-cog'></i></span>
+                                </p>
                                 <div class="expain">
                                     <p>
-                                        คุณต้องการการตั้งค่าใด ๆ ที่นี่ คุณสามารถท่องการตั้งค่าบางอย่างได้ที่นี่
+                                        ที่นี้ถ้าคุณต้องการการตั้งค่าใด ๆที่นี่คุณสามารถท่องการตั้งค่าบางอย่างได้ที่นี่
                                     </p>
                                 </div>
                                 <div class="Exit-ToHome">
-                                    <button onclick="Off2()">กลับไปหน้าแรก</button>
-                                    <button id="myBtn" onclick="OpenFullScre()">เปิดเว็บแบบเต็มจอ?</button>
+                                    <button onclick="Off2()">กลับไปหน้าแรก?</button>
+                                    <button id="myBtn" onclick="OpenFullScre()">เต็มหน้าจอ?</button>
                                 </div>
                             </div>
 
-                        </li>
-                        <li>
                             <div class="lang-sys">
-                                <h1>เลือกภาษาภูมิภาค</h1>
+                                <h1>เลือกภาษาที่คุณใช้</h1>
 
                                 <div class="language">
                                     <div class="lang-conn">
-                                        <a href="../../index.html">English</a>
-                                        <a href="#">Thai</a>
+                                        <div class="lang-seclecter">
+                                            <a href="../../index.html" >ภาษาอังกฤษ</a>
+                                        </div>
+                                        <div class="lang-seclecter">
+                                            <a onclick="Off2()">ภาษาไทย</a>
+                                        </div>
                                     </div>
                                 </div>
 
                             </div>
-                        </li>
-                        <li>
-                            <!-- dark mode pericnalization -->
+
+                        </div>
+                        <div class="inside-app">
+
+                            <!-- dark mode Personalization -->
                             <div class="Theme-Sys">
-                                <h1>เลือกธีมที่ต้องการ</h1>
+                                <h1>เลือกธีมที่คุณชอบแล้วคิดว่ามันดี</h1>
 
                                 <div class="color-sysche">
                                     <div class="Theme">
                                         <div class="Theme-Selecter">
-                                            <a onclick="Off2()"><img src="../../Theme/Defauit.png" alt="">Pixel
-                                                design</a>
+                                            <a onclick="Off2()"><img src="../../Theme/Defauit.png" alt="">ธีมตั่งเดิม</a>
                                         </div>
                                         <div class="Theme-Selecter">
                                             <a href="Personalization/Web3.html"><img src="../../Theme/Web3.png"
-                                                    alt="">Cyberpunk design</a>
+                                                    alt="">ธีมโลกอนาคต</a>
                                         </div>
                                     </div>
-                                </div>
 
+                                </div>
                             </div>
 
+                        </div>
                         </li>
                     </ul>
                 </div>

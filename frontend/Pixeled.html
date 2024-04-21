@@ -211,18 +211,32 @@
         <div class="naccs">
             <div class="grid">
                 <div class="gc gc--1-of-3">
-                    <div class="menu">
-                        <div class="active"><span class="light"></span><span><i class='bx bx-home'></i>Home</span></div>
-                        <div><span class="light"></span><span><i class='bx bx-globe' ></i>Language</span></div>
-                        <div><span class="light"></span><span><i class='bx bx-brush' ></i>Personalization</span></div>
+                    <div class="text-setting-nccess">
+                        <h1><i class='bx bxs-cog'></i>Settings</h1>
                     </div>
+                    <div class="menu" id="Links-clickSettings">
+                        <div class="active"><span class="light"></span><span><i class='bx bx-home'></i>All
+                                Settings</span></div>
+                    </div>
+
+                    <div class="option-linkclick">    
+                        <div><a href="Personalization/Web3.html"><span><i class='bx bx-link-external' ></i>Cyberpunk</span></a></div>
+                        <div><a href="index.html"><span><i class='bx bx-link-external' ></i>Default</span></a></div>
+                        <div><a href="Language/Thai/Thai.html"><span><i class='bx bx-globe'></i>Thai</span></a></div>
+                        <div><a href="#"><span><i class='bx bx-globe'></i>English</span></a></div>
+                        <div><span  onclick="OpenFullScre()"><i class='bx bx-fullscreen' ></i>Fullscreen</span></div>
+                        <div><span onclick="Off2()"><i class='bx bx-exit' ></i>Exit to lobby</span></div>
+                    </div>
+
                 </div>
                 <div class="gc gc--2-of-3">
                     <ul class="nacc">
                         <li class="active">
+                            <div class="inside">
 
                             <div class="Welcome-More">
-                                <p class="Sett-introduc">This is<span>Peakk Portfolio<i class='bx bxs-cog'></i></span></p>
+                                <p class="Sett-introduc">This is<span>Peakk Portfolio<i class='bx bxs-cog'></i></span>
+                                </p>
                                 <div class="expain">
                                     <p>
                                         Any settings its do you need on here you can surf some settings on here.
@@ -234,8 +248,6 @@
                                 </div>
                             </div>
 
-                        </li>
-                        <li>
                             <div class="lang-sys">
                                 <h1>Select Your language</h1>
 
@@ -251,9 +263,11 @@
                                 </div>
 
                             </div>
-                        </li>
-                        <li>
-                            <!-- dark mode pericnalization -->
+
+                        </div>
+                        <div class="inside-app">
+
+                            <!-- dark mode Personalization -->
                             <div class="Theme-Sys">
                                 <h1>Select your theme</h1>
 
@@ -263,34 +277,33 @@
                                             <a onclick="Off2()"><img src="Theme/Defauit.png" alt="">Pixel design</a>
                                         </div>
                                         <div class="Theme-Selecter">
-                                            <a href="./Personalization/Web3.html"><img src="Theme/Web3.png" alt="">Cyberpunk design</a>
+                                            <a href="./Personalization/Web3.html"><img src="Theme/Web3.png"
+                                                    alt="">Cyberpunk design</a>
                                         </div>
                                     </div>
+
                                 </div>
-
-                                <div class="Page-theme-font-selecter">
-
-                                    <div class="Pagetheme">
-                                            <h1>Select your best font</h1>
-                                            <p>Its work only main page but english language only on theme a font automaticity chenge to make a theme beautiful. </p>
-                                    </div>
-
-                                    <div class="page-image">
-
-                                        <div class="Page-Selecter">
-                                            <a href="index.html"><img src="Font-image/Sans-Serif.png" alt=""></a>
-                                        </div>
-
-                                        <div class="Page-Selecter">
-                                            <a onclick="Off2()"><img src="Font-image/Monospace.png"
-                                                    alt=""></a>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-
                             </div>
 
+                            <div class="Page-theme-font-selecter">
+
+                                <div class="Pagetheme">
+                                    <h1>Select your best font</h1>
+                                    <p>Its work only main page but english language only on theme a font
+                                        automaticity chenge to make a theme beautiful. </p>
+                                </div>
+
+                                <div class="page-image">
+                                    <div class="Page-Selecter">
+                                        <a href="index.html"><img src="Font-image/Sans-Serif.png" alt=""></a>
+                                    </div>
+                                    <div class="Page-Selecter">
+                                        <a onclick="Off2()"><img src="Font-image/Monospace.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                         </li>
                     </ul>
                 </div>

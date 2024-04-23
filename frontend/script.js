@@ -168,3 +168,4 @@ window.addEventListener("click", () => {
 window.addEventListener("focus", () => {
   document.title = docTitle;
 });
+

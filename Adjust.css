@@ -22,7 +22,6 @@ nav .nav-bar .logo a {
 }
 
 .nav-links .navhover a {
-    font-family: SegoeUi-Varible;
     font-weight: 400;
 }   
 
@@ -37,11 +36,11 @@ nav .nav-bar .logo a {
 
 .intro--options h3 {
     font-weight: 600;
-    font-family: 'Switzer', sans-serif;
+    font-family: Madimi;
 }
 
 .intro--options p {
-    font-family: Helvetica;
+    font-weight: 500;
 }
 
 .about--banner h2 {
@@ -58,7 +57,7 @@ nav .nav-bar .logo a {
 }
 
 .glitch {
-    font-family: Helvetica;
+    font-family: Madimi;
     font-weight: 600;
 }
 
@@ -74,4 +73,8 @@ nav .nav-bar .logo a {
     font-style: normal;
 }
 
+.comment-text li a {
+font-family: 'Switzer', sans-serif;
+font-weight: 600;
+}
 /* font-family: 'Switzer', sans-serif; */

@@ -1,0 +1,12 @@
+
+@media screen and (max-height: 690px) {
+    .navbar-links {
+        position: static;
+    }
+}
+
+@media screen and (max-height: 490px) {
+    .navbar-links {
+        margin-top: 0.4rem;
+    }
+}

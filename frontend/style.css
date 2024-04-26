@@ -1027,8 +1027,12 @@ body.dark .intro--banner button {
   margin: 0;
   padding: 0;
   list-style: none;
-  background:  var(--nav-color);
+  background:  rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(20px);
+}
+
+body.dark .intro--options {
+  background:  transparent;
 }
 
 .intro--options>a {
@@ -1463,20 +1467,19 @@ body.dark .about--banner i {
 }
 
 .about-buttons-on-responsive {
-  background: linear-gradient(225deg, #e6cf85, #fff69e);
-  box-shadow: -12px 12px 31px #d6c17c,
-    12px -12px 31px #ffffac;
+  background: linear-gradient(225deg, #fffbd1, #fff69e);
   color: #000;
   margin-top: 4rem;
-  padding: 0.4rem 0.6rem;
-  font-size: 14px;
+  padding: 0.6rem 0.8rem;
+  font-size: 16px;
   display: none;
   width: 100px;
   border-radius: 4px;
   text-align: center;
   font-weight: 700;
   transition: ease-in-out 0.5s;
-  font-family: 'JetBrains Mono', sans-serif;
+  /* font-family: 'JetBrains Mono', sans-serif; */
+  font-family: 'General Sans', sans-serif;
 }
 
 .about-buttons-on-responsive:active {
@@ -2480,9 +2483,7 @@ body.dark .comment-text h1 {
 }
 
 body.dark .comment-text h2 {
-  text-shadow: 0px -2px 16px rgba(255, 255, 255, 0.5),
-    0px -2px 6px rgba(255, 255, 255, 0.783);
-  color: #ddf5db;
+  color: #fffbd1;
 }
 
 .comment-text span {
@@ -2725,7 +2726,7 @@ body.dark .card .content p {
     left: -100%;
     top: 0;
     padding: 25px;
-    background-color: var(--side-nav);
+    background-color: rgb(255, 255, 255);
     z-index: 99900;
     transition: all 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
     width: 100%;
@@ -2782,7 +2783,7 @@ body.dark .card .content p {
   }
 
   .nav-links .navhover a {
-    border-bottom: solid 2px #f5d672;
+    border-bottom: solid 2px #ffeba8;
     color: #000000;
     width: 170px;
     padding: 0.7rem;
@@ -2791,11 +2792,11 @@ body.dark .card .content p {
 
   body.dark .nav-links .navhover a {
     color: #fff;
-    border-bottom: solid 2px #f5d672;
+    border-bottom: solid 2px #fffbd1;
   }
 
   .nav-links .MoblieShow a {
-    border-bottom: solid 2px #f5d672;
+    border-bottom: solid 2px #ffeba8;
     color: #000000;
     width: 170px;
     padding: 0.7rem;
@@ -2804,7 +2805,7 @@ body.dark .card .content p {
 
   body.dark .nav-links .MoblieShow a {
     color: #fff;
-    border-bottom: solid 2px #f5d672;
+    border-bottom: solid 2px #fffbd1;
   }
 
   .nav-bar .nav-links .navhover {
@@ -3026,7 +3027,7 @@ body.dark .card .content p {
   }
 
   .comment-text span {
-    background-color: #f5d672;
+    background-color: #fffbd1;
     color: #000;
     border-radius: 6px;
     display: block;
@@ -3036,6 +3037,7 @@ body.dark .card .content p {
     margin-top: 0.7rem;
     font-size: 34px;
     font-family: SFPRO;
+    box-shadow: none;
   }
 
   .comment-text h2 {
@@ -3107,11 +3109,12 @@ body.dark .card .content p {
   }
 
   .intro--options p {
-    font-size: 9px;
+    font-size: 12px;
   }
 
   .intro--options h3 {
-    font-size: 14px;
+    font-size: 16px;
+    box-shadow: none;
     margin-bottom: 5px;
   }
 
@@ -3198,7 +3201,11 @@ body.dark .card .content p {
   }
 
   body .circles li {
-    background: rgba(0, 0, 0, 0.418);
+    background: transparent;
+  }
+
+  .circles {
+    opacity: 30%;
   }
 
   nav {
@@ -3253,6 +3260,10 @@ body.dark .card .content p {
   .circles li {
     scale: 60%;
   }
+  /* new */
+  .intro--options>a:nth-child(3) {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
@@ -3286,10 +3297,6 @@ body.dark .card .content p {
   .darkLight-searchBox .dark-light,
   .darkLight-searchBox .searchToggle {
     width: 25px;
-  }
-
-  body nav .nav-bar .logo a {
-    padding-right: 1.4rem;
   }
 }
 
@@ -3902,8 +3909,8 @@ body.dark .alert-choice {
 
   .intro--banner strong {
     animation: none;
-    background-color: #F5D672;
-    background: linear-gradient(225deg, #F5D672, #F5D672);
+    background-color: #fffbd1;
+    background: linear-gradient(225deg, #fffbd1, #fffbd1);
     box-shadow: none;
   }
 
@@ -3931,17 +3938,17 @@ body.dark .alert-choice {
 
   .about--banner span {
     box-shadow: none;
-    background: linear-gradient(225deg, #F5D672, #F5D672);
+    background: linear-gradient(225deg, #fffbd1, #fffbd1);
     text-shadow: none;
   }
 
   body.dark .glitch {
-    background: linear-gradient(225deg, #F5D672, #F5D672);
+    background: linear-gradient(225deg, #fffbd1, #fffbd1);
     box-shadow: none;
   }
 
   .glitch {
-    background: linear-gradient(225deg, #F5D672, #F5D672);
+    background: linear-gradient(225deg, #fffbd1, #fffbd1);
     box-shadow: none;
     animation: none;
   }
@@ -3973,7 +3980,7 @@ body.dark .alert-choice {
   .comment-text span {
     text-shadow: none;
     box-shadow: none;
-    background: linear-gradient(225deg, #F5D672, #F5D672);
+    background: linear-gradient(225deg, #fffbd1, #fffbd1);
   }
 
   body.dark .comment-text h2 {
@@ -3989,7 +3996,7 @@ body.dark .alert-choice {
   .comment-text li a {
     text-shadow: none;
     box-shadow: none;
-    background: linear-gradient(225deg, #F5D672, #F5D672);
+    background: linear-gradient(225deg, #fffbd1, #fffbd1);
   }
 }
 
@@ -4016,6 +4023,13 @@ body.dark .alert-choice {
     bottom: 13px;
     right: -216px;
   }
+  .intro--banner h1 {
+    text-shadow: none;
+    font-size: 56px;
+  }
+  .intro--banner {
+    height: 400px;
+  }
 }
 
 @media (max-width: 790px) {
@@ -4024,8 +4038,16 @@ body.dark .alert-choice {
     width: 260px;
   }
 
+  .menu {
+    width: 260px;
+  }
+
   .intro--banner strong {
-    font-size: 48px;
+    font-size: 52px;
+  }
+
+  .intro--banner {
+    height: 400px;
   }
 
   .intro--banner img {
@@ -4034,13 +4056,13 @@ body.dark .alert-choice {
   }
 
   .intro--banner button {
-    padding: 0.3rem 1rem;
+    padding: 0.8rem 1.3rem;
     font-size: 18px;
   }
 
   .intro--options p {
     line-height: 1;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   body .about--banner span {
@@ -4081,7 +4103,7 @@ body.dark .alert-choice {
   }
 
   .comment-text li a {
-    padding: 0.4rem 1rem;
+    padding: 0.6rem 1rem;
     font-weight: 200;
     font-size: 12px;
   }
@@ -4092,6 +4114,10 @@ body.dark .alert-choice {
 
   .comment-text span {
     width: 186px;
+  }
+  .intro--banner h1 {
+    text-shadow: none;
+    font-size: 56px;
   }
 }
 
@@ -4119,10 +4145,6 @@ body.dark .alert-choice {
 @media (max-width: 412px) {
   .intro--options p {
     line-height: 1;
-    font-size: 9px;
-  }
-
-  .intro--options h3 {
     font-size: 12px;
   }
 }
@@ -4620,3 +4642,120 @@ body.dark .Txt-alert-intro hr {
 
 /* update 2.0 */
 
+/* super responsive */
+
+@media screen and (max-height: 1320px) {
+  .stay-on-right h1 {
+    font-size: 92px;
+  }
+  .outline-text h1 {
+    font-size: 92px;
+  }
+  .outline-text-for-offen h1 {
+    font-size: 92px;
+  }
+  .outline-text-for-offen h2 {
+    font-size: 24px;
+  }
+  .outline-text-for-offen h3 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .stay-on-right h1 {
+    font-size: 62px;
+  }
+  .outline-text h1 {
+    font-size: 62px;
+  }
+  .outline-text-for-offen h1 {
+    font-size: 62px;
+  }
+  .outline-text-for-offen h2 {
+    font-size: 20px;
+  }
+  .outline-text-for-offen h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-height: 720px) {
+  .outline-text {
+    display: none;
+  }
+  .stay-on-right p {
+    display: none;
+  }
+  .stay-on-right h1 {
+    display: none;
+  }
+  .outline-text h1 {
+    display: none;
+  }
+  .outline-text-for-offen h1 {
+    display: none;
+  }
+  .outline-text-for-offen h2 {
+    display: none;
+  }
+  .outline-text-for-offen h3 {
+    display: none;
+  }
+}
+
+/* width */
+
+@media screen and (max-width: 2500px) {
+  .outline-text {
+    left: -500px;
+  }
+  .stay-on-right {
+    right: -500px;
+  }
+  .outline-text-for-offen {
+    left: -30%;
+  }
+}
+
+@media screen and (max-width: 2240px) {
+  .outline-text {
+    left: -300px;
+  }
+  .stay-on-right {
+    right: -300px;
+  }
+  .index-scroll-btn {
+    left: 105%;
+  }
+}
+
+@media screen and (max-width: 1760px) {
+  .outline-text {
+    display: none;
+  }
+  .stay-on-right h1 {
+    display: none;
+  }
+  .stay-on-right p {
+    display: none;
+  }
+  .outline-text-for-offen {
+    display: none;
+  }
+  .Text-reveal .BigTextReveal {
+    font-size: 60px;
+}
+}
+
+@media screen and (max-width: 960px) {
+  .Text-reveal .BigTextReveal {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .Text-reveal .BigTextReveal {
+    font-size: 32px;
+  }
+}

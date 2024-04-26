@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peakk Portfolio - Mew</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Link css -->
+    <link rel="stylesheet" href="Mew.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <link rel="stylesheet" href="../../Frontend-Peakk-Introducing/style-font.css">
+
+    <link href="https://api.fontshare.com/v2/css?f[]=jet-brains-mono@300,400,500,600,700,800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- loader -->
+
+    <div class="loader loader--active">
+        <div class="loader__icon">
+            <svg id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px"
+                viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                <path opacity="0.2" fill="#000"
+                    d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z">
+                </path>
+                <path fill="#000"
+                    d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0C22.32,8.481,24.301,9.057,26.013,10.047z">
+                </path>
+                <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20"
+                    to="360 20 20" dur="0.5s" repeatCount="indefinite"></animateTransform>
+            </svg>
+        </div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+    </div>
+
+    <!-- sidenav -->
+
+    <nav>
+        <div class="navbar-content">
+            <div class="navbar-icons">
+                <img src="MewLogo.png" alt="">
+                <h1 id="Textonexpand"></h1>
+            </div>
+            <hr>
+            <div class="navbar-links">
+
+                <li class="btn" type="button" onclick="Expend()"><a><ion-icon name="refresh-outline"></ion-icon>
+                        <p id="Remove"></p>
+                    </a></li>
+                <li><a href=""><ion-icon name="person-outline"></ion-icon>
+                        <p id="RemoveTwo"></p>
+                    </a></li>
+                <li><a href=""><ion-icon name="call-outline"></ion-icon>
+                        <p id="RemoveThree"></p>
+                    </a></li>
+                <li><a href=""><ion-icon name="cash-outline"></ion-icon>
+                        <p id="RemoveFour"></p>
+                    </a></li>
+                <li><a href=""><ion-icon name="home-outline"></ion-icon>
+                        <p id="RemoveFive"></p>
+                    </a></li>
+            </div>
+            <div class="bottom-sidebar">
+                <li onclick="on()"><span onclick="this.focus();return false"><ion-icon
+                            name="settings-outline"></ion-icon>
+                        <p id="RemoveSix"></p>
+                    </span></li>
+                <div class="toggle"><ion-icon name="color-fill-outline"></ion-icon>
+                    <p id="RemoveSev"></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- pop-up -->
+
+    <div id="overlay">
+        <div class="Card-overlay">
+
+            <div class="card-overlay-text-intro">
+                <h1>Settings</h1>
+                <div class="close-btn-overlay-settings">
+                    <span onclick="off()">×</span>
+                </div>
+            </div>
+
+            <div class="Card-overlay-content">
+                <div class="Card-overlay-text">
+                    <ion-icon name="language-outline"></ion-icon>
+                    <h1>Select your language</h1>
+                </div>
+                <div class="Card-overlay-icons">
+                    <li id="highlight"><a href="#">Thai</a></li>
+                    <li><a href="#">English</a></li>
+                </div>
+            </div>
+
+            <div class="Card-overlay-content">
+                <div class="Card-overlay-text">
+                    <ion-icon name="grid-outline"></ion-icon>
+                    <h1>Sidebar Position</h1>
+                </div>
+                <div class="Card-overlay-icons">
+                    <li id="highlight"><a href="#">Default</a></li>
+                    <li><a href="#">top</a></li>
+                </div>
+            </div>
+
+            <div class="Card-overlay-content">
+                <div class="Card-overlay-text">
+                    <ion-icon name="brush-outline"></ion-icon>
+                    <h1>Theme</h1>
+                </div>
+                <div class="Card-overlay-icons">
+                    <li id="highlight"><a href="#">Default</a></li>
+                    <li><a href="#">Modern</a></li>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- content -->
+
+    <div class="container">
+
+        <header>
+            <div class="header-content">
+                <div class="header-text">
+                    <div class="header-text-content">
+                        <h1>hello i'm <strong>jiratha</strong> or call me <strong>Mew </strong>and he is
+                            <b>Designer</b></h1>
+                        <hr>
+                        <p>introducing jiratha he is 13 year old same with peakk i'm designer i work with peakk team and
+                            help peakk make website with Oei or Chaninyut and welcome everybody to peakk portfolio!</p>
+                    </div>
+                    <div class="Contact-name">
+                        <h1>This is my team</h1>
+                    </div>
+                    <div class="Contact">
+                        <img src="./MewLogo.png" alt="">
+                        <img src="./MewLogo.png" alt="">
+                        <img src="./MewLogo.png" alt="">
+                    </div>
+                </div>
+                <div class="header-image">
+                    <img src="./MewLogo.png" alt="">
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="section-content">
+                <div class="section-image">
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="MewJavascript.js"></script>
+
+</body>
+
+</html>

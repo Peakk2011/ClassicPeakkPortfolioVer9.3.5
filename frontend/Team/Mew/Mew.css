@@ -155,7 +155,7 @@ body {
 /* color theme #ccba9c */
 
 body {
-    background-color: #fefefe;   
+    background-color: #ffffed;   
     color: #000;
 }
 
@@ -577,7 +577,7 @@ body.dark .circles li{
 }
 
 header {
-  padding-top: 7rem;
+  padding-top: 9rem;
 }
 
 /* Start content */
@@ -594,12 +594,16 @@ header {
 }
 
 .header-text {
-  border-left: solid 2px #f1dfbf;
+  border-left: solid 3.5px #000;
   width: 50%;
   background-color: transparent;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   backdrop-filter: blur(20px);
+}
+
+body.dark .header-text {
+  border-left: solid 3px #f1dfbf;
 }
 
 .header-text h1 {
@@ -609,8 +613,8 @@ header {
 }
 
 .header-text strong {
-  font-weight: 300;
-  color: #fcf7ed;
+  font-weight: 400;
+  color: #000;
 }
 
 b {
@@ -625,22 +629,39 @@ b {
   font-family: SFPRO;
 }
 
+body.dark strong {
+  color: #fcf7ed;
+}
 
 .header-text hr {
   margin: 1.7rem 0rem;
   width: 50%;
+  border: solid 2px #000;
+}
+
+body.dark .header-text hr {
   border: solid 2px #f1dfbf;
 }
 
 .header-text-content{
-  width: 80%;
+  width: 85%;
   margin-left: 2rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
+.header-text ion-icon {
+  font-size: 100px;
+  margin-bottom: 2rem;
+}
+
+body.dark .header-text ion-icon {
+  color: #ffeba8;
+} 
+
 .header-text p {
   font-family: SFPRO;
+  font-size: 17px;
 }
 
 .Contact-name {
@@ -649,8 +670,9 @@ b {
 }
 
 .Contact-name h1 {
-  font-weight: 300;
+  font-weight: 700;
   font-size: 30px;
+  font-family: protofo;
 }
 
 .Contact {
@@ -663,4 +685,75 @@ b {
 .Contact img {
     width: 50px;
     border-radius: 4px;
+}
+
+section {
+  margin-top: 11rem;
+}
+
+.section-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-image img {
+  width: 160px;
+  border-radius: 10px;
+}
+
+.section-image {
+  display: flex;
+  gap: 20px;
+}
+
+.section-content .section-text h1 {
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.section-content .section-text ion-icon {
+  font-size: 120px;
+  margin-bottom: 1.5rem;
+}
+
+body.dark .section-content .section-text ion-icon {
+  color: #ffeba8;
+}
+
+.section-content .section-text {
+  border-right: solid 3px #000;
+  padding-right: 2rem;
+  padding: 2rem 2rem;
+}
+
+body.dark .section-content .section-text {
+  border-right: solid 3px #f1dfbf;
+}
+
+article {
+  margin-top: 4rem;
+}
+
+.flex-article {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 5rem;
+}
+
+.article-text h1 {
+  font-size: 36px;
+  margin-bottom: 1rem;
+  border-bottom: solid 2px #000;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+body.dark .article-text h1 {
+  border-bottom: solid 2px #f1dfbf;
+}
+
+.article-text h1 {
+  border-bottom: solid 2px #000;
 }

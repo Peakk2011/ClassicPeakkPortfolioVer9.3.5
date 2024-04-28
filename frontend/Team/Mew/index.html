@@ -14,10 +14,16 @@
 
     <link href="https://api.fontshare.com/v2/css?f[]=jet-brains-mono@300,400,500,600,700,800&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
-
 <body>
+
+    <script>
+        AOS.init();
+      </script>
+
     <!-- loader -->
 
     <div class="loader loader--active">
@@ -44,7 +50,7 @@
 
     <!-- sidenav -->
 
-    <nav>
+    <nav data-aos="fade-right" data-aos-delay="1900" data-aos-duration="600">
         <div class="navbar-content">
             <div class="navbar-icons">
                 <img src="MewLogo.png" alt="">
@@ -148,8 +154,10 @@
 
         <header>
             <div class="header-content">
-                <div class="header-text">
+                <div class="header-text" data-aos="fade-down" data-aos-delay="2300" data-aos-duration="600">
                     <div class="header-text-content">
+                        <!-- icon first -->
+                        <ion-icon name="person-sharp"></ion-icon>
                         <h1>hello i'm <strong>jiratha</strong> or call me <strong>Mew </strong>and he is
                             <b>Designer</b></h1>
                         <hr>
@@ -161,23 +169,46 @@
                     </div>
                     <div class="Contact">
                         <img src="./MewLogo.png" alt="">
-                        <img src="./MewLogo.png" alt="">
-                        <img src="./MewLogo.png" alt="">
+                        <img src="./AeiLogo.png" alt="">
+                        <img src="../../Peakk-Logo/LightMode.png" alt="">
                     </div>
                 </div>
-                <div class="header-image">
+                <div class="header-image" data-aos="fade-right" data-aos-delay="2800" data-aos-duration="600">
                     <img src="./MewLogo.png" alt="">
                 </div>
             </div>
         </header>
 
-        <section>
+        <section data-aos="fade-down" data-aos-delay="2400" data-aos-duration="600">
             <div class="section-content">
-                <div class="section-image">
-                    
+                <div class="section-image"  data-aos="fade-right" data-aos-delay="3000" data-aos-duration="600">
+                    <img src="./MewLogo.png" alt="">
+                    <img src="./AeiLogo.png" alt="">
+                    <img src="../../Peakk-Logo/LightMode.png" alt="">
+                </div>
+                <div class="section-text">
+                    <ion-icon name="extension-puzzle-sharp"></ion-icon>
+                    <h1>Why Join <br><b>Peakk</b> Team</h1>
                 </div>
             </div>
         </section>
+
+        <article>
+            <div class="flex-article">
+                <div class="article-text" data-aos="fade-down" data-aos-duration="500">
+                    <h1>Starter</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laborum quibusdam accusantium voluptates alias ea adipisci veniam delectus aut ipsum dignissimos minus, quam optio iste tempore labore ipsa, repellendus sunt!</p>
+                </div>
+                <div class="article-text"  data-aos="fade-down" data-aos-duration="600" data-aos-delay="200" >
+                    <h1>Peakk invite</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laborum quibusdam accusantium voluptates alias ea adipisci veniam delectus aut ipsum dignissimos minus, quam optio iste tempore labore ipsa, repellendus sunt!</p>
+                </div>
+                <div class="article-text"data-aos="fade-down" data-aos-duration="700" data-aos-delay="300">
+                    <h1>Work</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laborum quibusdam accusantium voluptates alias ea adipisci veniam delectus aut ipsum dignissimos minus, quam optio iste tempore labore ipsa, repellendus sunt!</p>
+                </div>
+            </div>
+        </article>
 
     </div>
     <script src="MewJavascript.js"></script>

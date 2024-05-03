@@ -97,8 +97,7 @@ body {
     }
 }
 
-body.dark {
-  /* Create the parallax scrolling effect */
+/* body.dark {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -110,10 +109,9 @@ body.dark:root {
   --accent: canvas;
   --padding: 2rem;
   --distance: 10vh;
-  /* color-scheme: light only; */
-}
+} */
 
-body.dark::before {
+/* body.dark::before {
   --size: 70px;
   content: '';
   height: 90vh;
@@ -128,16 +126,14 @@ body.dark::before {
   transform-style: flat;
   pointer-events: none;
   z-index: -1;
-}
+} */
 
-:root {
-  /* hsla(0, 0%, 5%, 0.409) */
+/* :root {
   --line: #e1e1e1;
   --accent: canvas;
   --padding: 2rem;
   --distance: 10vh;
-  /* color-scheme: light only; */
-}
+} */
 
 /* @media(prefers-color-scheme: dark) {
 	:root {
@@ -147,7 +143,7 @@ body.dark::before {
 } */
 
 
-body::before {
+/* body::before {
   --size: 70px;
   content: '';
   height: 100vh;
@@ -162,7 +158,7 @@ body::before {
   transform-style: flat;
   pointer-events: none;
   z-index: -1;
-}
+} */
 
 .container {
   max-width: 1100px;
@@ -1200,130 +1196,13 @@ body.dark .priveTet {
   border-bottom: solid 5px #fffbd1;
 }
 
-.outline-text {
-  position: absolute;
-  color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #000;
-  left: -650px;
-  top: 0px;
-}
-
-.outline-text-for-offen {
-  position: absolute;
-  left: -60%;
-}
-
-.outline-text-for-offen h1 {
-  font-size: 140px;
-  font-family: 'JetBrains Mono', sans-serif;
-  -webkit-text-stroke-color: #000;
-  color: transparent;
-  -webkit-text-stroke-width: 3px;
-  font-weight: 800;
-}
-
-body.dark .outline-text-for-offen h1 {
-  -webkit-text-stroke-color: #fffbd1;
-}
-
-body.dark .outline-text {
-  -webkit-text-stroke-color: #f2dfa0;
-}
-
-.outline-text h1 {
-  font-size: 130px; 
-  font-family: 'JetBrains Mono', sans-serif;
-  line-height: 0.9;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #000;
-}
-
-body.dark .outline-text h1 {
-  -webkit-text-stroke-color: #fffbd1;
-}
-
-.outline-text-for-offen h2{
-  color: #000;
-  -webkit-text-stroke-color: transparent;
-  font-size: 30px;
-  font-family: 'JetBrains Mono', sans-serif;
-}
-
-.outline-text-for-offen h3{
-  color: #000;
-  -webkit-text-stroke-color: transparent;
-  font-size: 30px;
-  font-family: 'JetBrains Mono', sans-serif;
-}
-
-body.dark .outline-text-for-offen h2{
-  color: #fffbd1;
-}
-
-body.dark .outline-text-for-offen h3{
-  color: #fffbd1;
-}
-
-/* another outline to main */
-
-.outline-text p {
-  color: #000;
-  font-size: 22px;
-  border-bottom: solid 2px #000;
-  -webkit-text-stroke-color: transparent;
-} 
-
-.outline-text .TextOnTop {
-  top: 0px;
-  position: absolute;
-}
-
-body.dark .outline-text p {
-  border-bottom: solid 2px #fffbd1;
-  color: #fffbd1;
-}
-
-.stay-on-right {
-  right: -620px;
-  position: absolute;
-  top: -50px;
-  /* bottom: -150px; */
-}
-
-.stay-on-right h1 {
-  font-size: 120px; 
-  font-family: 'JetBrains Mono', sans-serif;
-  line-height: 0.9;
-  font-weight: 700;
-  color: transparent;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #000;
-}
-
-body.dark .stay-on-right h1 {
-  color: transparent;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #fffbd1;
-}
-
-.stay-on-right p {
-  border-bottom: solid 2px #000;
-  color: #000;
-} 
-
-body.dark .stay-on-right p {
-  border-bottom: solid 2px #fffbd1;
-  color: #fffbd1;
-} 
-
 .about {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 1440px;
+  width: 100%;
   max-width: 100%;
   height: 100%;
   -webkit-box-orient: vertical;
@@ -1339,6 +1218,19 @@ body.dark .stay-on-right p {
   perspective: 1px;
   perspective-origin: center center;
   transform-style: preserve-3d;
+  background-color: #fdfdf2;
+  padding: 2rem 0px;
+  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 93%);
+}
+
+body.dark .about {
+  background-color: #080808;
+}
+
+.about-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 1100px;
 }
 
 @media (max-width: 1180px) {
@@ -1349,8 +1241,7 @@ body.dark .stay-on-right p {
 
 .about--banner {
   position: relative;
-  height: 365px;
-  background: rgba(255, 255, 255, 0.407);
+  height: 335px;
   border-radius: 10px;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
@@ -1499,7 +1390,6 @@ body.dark .about--banner i {
 .glitch {
   color: var(--text-color);
   font-size: 38px;
-  margin-top: 0.5rem;
   font-weight: 600;
   text-transform: upercase;
   position: relative;
@@ -2451,12 +2341,23 @@ body.dark .icon2 a {
 
 .comment {
   display: flex;
+  padding: 2rem 0px;
+  background-color: #fdfdf2;
+  clip-path: polygon(0 0, 100% 6%, 100% 92%, 0% 100%);
+}
+
+body.dark .comment {
+  background-color: #080808;
 }
 
 .comm-conn {
   display: flex;
+  max-width: 1100px;
+  width: 1100px;
+  margin: 0 auto;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
 }
 
 .comment-text h1 {
@@ -2521,9 +2422,6 @@ body.dark .comment-text h2 {
 
 .background i {
   font-size: 340px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 body.dark .background i {
@@ -3381,6 +3279,156 @@ body.dark .card .content p {
 
 /* animation */
 
+/* static */
+
+.viewport {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+  -webkit-perspective-origin: 50% 200px;
+  -moz-perspective-origin: 50% 200px;
+  -ms-perspective-origin: 50% 200px;
+  -o-perspective-origin: 50% 200px;
+  perspective-origin: 50% 200px;
+  -webkit-transform: scale(0.8, 0.8);
+  -moz-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  -o-transform: scale(0.8, 0.8);
+  transform: scale(0.8, 0.8);
+  -webkit-box-reflect: below 150px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, transparent), to(rgba(250, 250, 250, 0.253))); 
+  margin-bottom: 4rem;
+
+}
+
+.cube {
+  position: relative;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(136deg) rotateY(1122deg);
+  -moz-transform: rotateX(136deg) rotateY(1122deg);
+  -ms-transform: rotateX(136deg) rotateY(1122deg);
+  -o-transform: rotateX(136deg) rotateY(1122deg);
+  transform: rotateX(136deg) rotateY(1122deg); }
+
+.cube > div {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.9;
+  height: 200px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.856);
+  border: solid 6px #fff;
+  -webkit-touch-callout: none;
+  -moz-touch-callout: none;
+  -ms-touch-callout: none;
+  -o-touch-callout: none;
+  touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+body.dark .cube > div {
+  background-color: #fffbd1;
+  border: solid 8px #000000;
+}
+
+.cube > div > div.cube-image {
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  line-height: 200px;
+  font-size: 80px;
+  text-align: center;
+  color: #1b9bd8;
+  -webkit-transition: color 600ms;
+  -moz-transition: color 600ms;
+  -ms-transition: color 600ms;
+  -o-transition: color 600ms;
+  transition: color 600ms; }
+  .cube > div > div.cube-image.active {
+    color: red; }
+
+.cube > div:hover {
+  cursor: pointer; }
+
+.cube > div:active {
+  cursor: pointer; }
+
+.cube > div:first-child {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+  -moz-transform: rotateX(90deg) translateZ(100px);
+  -ms-transform: rotateX(90deg) translateZ(100px);
+  -o-transform: rotateX(90deg) translateZ(100px);
+  transform: rotateX(90deg) translateZ(100px);
+  outline: 1px solid transparent; }
+
+.cube > div:nth-child(2) {
+  -webkit-transform: translateZ(100px);
+  -moz-transform: translateZ(100px);
+  -ms-transform: translateZ(100px);
+  -o-transform: translateZ(100px);
+  transform: translateZ(100px);
+  outline: 1px solid transparent; }
+
+.cube > div:nth-child(3) {
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+  -moz-transform: rotateY(90deg) translateZ(100px);
+  -ms-transform: rotateY(90deg) translateZ(100px);
+  -o-transform: rotateY(90deg) translateZ(100px);
+  transform: rotateY(90deg) translateZ(100px);
+  outline: 1px solid transparent; }
+
+.cube > div:nth-child(4) {
+  -webkit-transform: rotateY(180deg) translateZ(100px);
+  -moz-transform: rotateY(180deg) translateZ(100px);
+  -ms-transform: rotateY(180deg) translateZ(100px);
+  -o-transform: rotateY(180deg) translateZ(100px);
+  transform: rotateY(180deg) translateZ(100px);
+  outline: 1px solid transparent; }
+
+.cube > div:nth-child(5) {
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+  -moz-transform: rotateY(-90deg) translateZ(100px);
+  -ms-transform: rotateY(-90deg) translateZ(100px);
+  -o-transform: rotateY(-90deg) translateZ(100px);
+  transform: rotateY(-90deg) translateZ(100px);
+  outline: 1px solid transparent; }
+
+.cube > div:nth-child(6) {
+  -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
+  -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
+  -ms-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
+  -o-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
+  transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
+  outline: 1px solid transparent; }
+
+object {
+  opacity: 0.5; }
+
+object:hover {
+  opacity: 1; }
+
+@media (max-width: 640px) {
+  .viewport {
+    -webkit-transform: scale(0.6, 0.6);
+    -moz-transform: scale(0.6, 0.6);
+    -ms-transform: scale(0.6, 0.6);
+    -o-transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6); } }
 
 .area {
   background: transparent;
@@ -3396,7 +3444,12 @@ body.dark .card .content p {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  opacity: 30%;
 }
+
+body.dark .circles {
+  opacity: 100%;
+} 
 
 .circles li {
   position: fixed;
@@ -3404,7 +3457,7 @@ body.dark .card .content p {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(193, 193, 193, 0.229);
+  background: transparent;
   animation: animate 15s linear infinite;
   box-shadow: rgba(27, 27, 27, 0.56) 5px 5px 2px 1px;
   bottom: -150px;

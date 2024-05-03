@@ -179,7 +179,13 @@ nav {
     height: 100%;
     position: fixed;
     width: 85px;
+    backdrop-filter: blur(40px);
+    background-color: rgba(255, 255, 255, 0.475);
     /* with f1f1fb hover effect color */
+}
+
+body.dark nav {
+  background-color: rgba(8, 8, 8, 0.76) !important;
 }
 
 .navbar-content {
